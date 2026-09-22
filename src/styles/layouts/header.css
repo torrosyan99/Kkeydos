@@ -67,7 +67,7 @@
     }
   }
 
-  .dropdown__link {
+  .service-link {
     @apply flex items-center gap-3;
     @apply text-brand-gray hover:text-brand-teal transition-colors;
 
