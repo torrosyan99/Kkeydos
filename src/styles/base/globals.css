@@ -1,0 +1,83 @@
+@custom-variant hover (&:hover);
+
+@theme {
+  --font-outfit: 'Outfit';
+
+  --default-transition-duration: 300ms;
+
+  --color-bg: #fff;
+  --color-primary: #0f172a;
+  --color-brand-teal: #0f8a8d;
+  --color-brand-orange: #f48949;
+  --color-brand-border: #e2e8e0;
+  --color-brand-light: #f6f7f8;
+  --color-brand-light-alt: #f8fafc;
+  --color-brand-gray: #64748b;
+
+  --spacing-section-mobile: 64px;
+  --spacing-section-tablet: 80px;
+  --spacing-section-desktop: 96px;
+
+  --shadow-default: 0 12px 32px rgb(15 23 42 / 0.1);
+}
+
+@layer base {
+  body {
+    @apply font-outfit text-primary bg-bg overflow-hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-medium;
+  }
+
+  h1 {
+    @apply text-[74px] leading-[1.2] max-2xl:text-[64px] max-md:text-[32px];
+  }
+
+  h2 {
+    @apply text-[48px] leading-[1.2] max-2xl:text-[40px] max-md:text-[32px];
+  }
+
+  h3 {
+    @apply text-[36px] leading-[1.2] max-2xl:text-[32px] max-md:text-[28px];
+  }
+
+  h4 {
+    @apply text-[30px] leading-[1.2] max-2xl:text-[28px] max-md:text-[24px];
+  }
+
+  h5 {
+    @apply text-[24px] leading-[1.2] max-md:text-[20px];
+  }
+
+  h6 {
+    @apply text-[20px] leading-[1.2] max-md:text-[18px];
+  }
+
+  details[data-accordion] {
+    @apply overflow-hidden
+  }
+
+  details[data-accordion] svg[data-accordion-icon] {
+    @apply transition-transform
+  }
+  details[data-accordion] summary {
+    @apply list-none cursor-pointer
+  }
+
+  details[data-accordion] summary::-webkit-details-marker {
+    display: none;
+  }
+
+
+  details[data-accordion][open] svg[data-accordion-icon] {
+    @apply rotate-180;
+  }
+
+
+}

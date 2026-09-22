@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+
+@import './base/fonts.css';
+@import './base/globals.css';
+
+@import './components/buttons.css';
+@import './components/containers.css';
+
+@import './layouts/header.css';

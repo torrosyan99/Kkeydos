@@ -1,0 +1,61 @@
+@layer components {
+  .btn {
+    --cta-skew: -16deg;
+    --cta-skew-offset: 7px;
+
+    @apply relative isolate inline-flex h-12 items-center justify-center;
+    @apply pr-8 pl-6 text-base leading-6 font-semibold text-white;
+
+    transition:
+      transform 150ms ease,
+      filter 150ms ease;
+
+    &::before,
+    &::after {
+      content: '';
+      @apply bg-brand-orange absolute inset-y-0 -z-1;
+      transition: filter 150ms ease;
+    }
+
+    &::before {
+      @apply right-5 left-0 rounded-l-lg;
+    }
+
+    &::after {
+      right: var(--cta-skew-offset);
+      @apply w-8 origin-center rounded-lg;
+      transform: skewX(var(--cta-skew));
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+      filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.1));
+
+      &::before,
+      &::after {
+        filter: brightness(1.08);
+      }
+    }
+
+    &:active {
+      transform: translateY(0) scale(0.98);
+      filter: none;
+    }
+
+    &:focus-visible {
+      @apply ring-brand-orange ring-2 ring-offset-2 outline-none;
+    }
+  }
+
+  .arrow-btn {
+    @apply flex items-center gap-1.5 font-semibold;
+
+    svg {
+      @apply size-4 transition-transform;
+    }
+
+    &:hover svg {
+      @apply translate-x-1;
+    }
+  }
+}
