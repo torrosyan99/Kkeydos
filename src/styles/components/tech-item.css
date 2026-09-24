@@ -1,0 +1,8 @@
+@layer components {
+  .tech-item {
+    @apply cursor-pointer pr-18 text-[52px] leading-tight font-bold;
+    @apply text-brand-muted-gray-alt/20 transition-colors duration-200;
+    @apply hover:text-brand-orange;
+    @apply max-md:pr-8 max-md:text-[32px];
+  }
+}

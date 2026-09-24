@@ -1,0 +1,25 @@
+@layer components {
+  .orange-pagination {
+    --swiper-pagination-color: var(--color-brand-orange);
+    --swiper-pagination-bullet-size: 10px;
+    --swiper-pagination-bullet-inactive-color: #d8d5d3;
+    --swiper-pagination-bullet-inactive-opacity: 1;
+    --swiper-pagination-bullet-horizontal-gap: 7px;
+
+    @apply flex w-auto items-center justify-center justify-self-center;
+  }
+
+  .circle-bg {
+    --circle-cut: 0%;
+
+    @apply relative isolate;
+    @apply before:pointer-events-none before:absolute before:top-20 before:left-1/2 before:-z-1;
+    @apply before:h-[calc(100%-12rem)] before:min-w-625 before:-translate-x-1/2;
+    @apply before:rounded-full before:bg-[#f3f4f5] before:content-[''];
+    @apply max-[1800px]:before:h-[calc(100%-40rem)] max-2xl:before:hidden;
+
+    &::before {
+      clip-path: inset(0 0 var(--circle-cut) 0);
+    }
+  }
+}

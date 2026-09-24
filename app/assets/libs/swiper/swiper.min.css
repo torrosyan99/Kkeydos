@@ -1,13 +1,13 @@
 /**
- * Swiper 14.2.0
+ * Swiper 12.0.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
- * Copyright 2014-2026 Vladimir Kharlampidi
+ * Copyright 2014-2025 Vladimir Kharlampidi
  *
  * Released under the MIT License
  *
- * Released on: August 26, 2026
+ * Released on: September 11, 2025
  */
 
 :root {
@@ -106,24 +106,10 @@
     > .swiper-wrapper {
       scroll-snap-type: x mandatory;
     }
-    > .swiper-wrapper > .swiper-slide:first-child {
-      margin-inline-start: var(--swiper-slides-offset-before);
-      scroll-margin-inline-start: var(--swiper-slides-offset-before);
-    }
-    > .swiper-wrapper > .swiper-slide:last-child {
-      margin-inline-end: var(--swiper-slides-offset-after);
-    }
   }
   &.swiper-vertical {
     > .swiper-wrapper {
       scroll-snap-type: y mandatory;
-    }
-    > .swiper-wrapper > .swiper-slide:first-child {
-      margin-block-start: var(--swiper-slides-offset-before);
-      scroll-margin-block-start: var(--swiper-slides-offset-before);
-    }
-    > .swiper-wrapper > .swiper-slide:last-child {
-      margin-block-end: var(--swiper-slides-offset-after);
     }
   }
   &.swiper-free-mode {
@@ -283,7 +269,6 @@
   .swiper-navigation-disabled & {
     display: none !important;
   }
-  ::slotted(svg),
   svg {
     height: 100%;
     object-fit: contain;
@@ -296,29 +281,11 @@
 .swiper-button-lock {
   display: none;
 }
-.swiper-button-next,
-.swiper-button-prev {
-  margin-top: calc(0px - var(--swiper-navigation-size) / 2);
-  top: var(--swiper-navigation-top-offset, 50%);
-}
-.swiper-button-prev {
-  left: var(--swiper-navigation-sides-offset, 4px);
-  right: auto;
-  .swiper-navigation-icon,
-  ::slotted(.swiper-navigation-icon) {
-    transform: rotate(180deg);
-  }
-}
-.swiper-button-next {
-  left: auto;
-  right: var(--swiper-navigation-sides-offset, 4px);
-}
 .swiper-horizontal {
   .swiper-button-next,
   .swiper-button-prev,
   ~ .swiper-button-next,
   ~ .swiper-button-prev {
-    margin-left: 0;
     margin-top: calc(0px - var(--swiper-navigation-size) / 2);
     top: var(--swiper-navigation-top-offset, 50%);
   }
@@ -340,15 +307,13 @@
   &.swiper-rtl ~ .swiper-button-next,
   & ~ .swiper-button-prev,
   .swiper-button-prev {
-    .swiper-navigation-icon,
-    ::slotted(.swiper-navigation-icon) {
+    .swiper-navigation-icon {
       transform: rotate(180deg);
     }
   }
   &.swiper-rtl .swiper-button-prev,
   &.swiper-rtl ~ .swiper-button-prev {
-    .swiper-navigation-icon,
-    ::slotted(.swiper-navigation-icon) {
+    .swiper-navigation-icon {
       transform: rotate(0deg);
     }
   }
@@ -360,26 +325,18 @@
   ~ .swiper-button-prev {
     left: var(--swiper-navigation-top-offset, 50%);
     margin-left: calc(0px - var(--swiper-navigation-size) / 2);
-    margin-top: 0;
-    right: auto;
   }
   .swiper-button-prev,
   ~ .swiper-button-prev {
     bottom: auto;
     top: var(--swiper-navigation-sides-offset, 4px);
-    .swiper-navigation-icon,
-    ::slotted(.swiper-navigation-icon) {
-      transform: rotate(-90deg);
-    }
+    transform: rotate(-90deg);
   }
   .swiper-button-next,
   ~ .swiper-button-next {
     bottom: var(--swiper-navigation-sides-offset, 4px);
     top: auto;
-    .swiper-navigation-icon,
-    ::slotted(.swiper-navigation-icon) {
-      transform: rotate(90deg);
-    }
+    transform: rotate(90deg);
   }
 }
 .swiper-pagination {

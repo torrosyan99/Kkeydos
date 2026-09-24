@@ -1,22 +1,21 @@
 @layer components {
-  .header-link {
-    @apply relative flex h-full cursor-pointer items-center gap-2;
-    @apply font-bold whitespace-nowrap transition-colors;
-
-    &::after {
-      content: '';
-      @apply bg-brand-teal absolute bottom-4.5 left-0 h-0.75 w-full origin-left scale-x-0 transition-transform duration-300;
-    }
-  }
-
   .dropdown {
     @apply invisible absolute top-full max-h-[calc(100dvh-160px)] opacity-0;
     @apply border-brand-border inset-x-0 rounded-b-2xl border-t bg-white text-sm delay-100;
     @apply overflow-y-auto overscroll-contain shadow-[0_32px_80px_rgb(15_23_42/0.16)];
   }
 
+  .header-link {
+    @apply relative flex h-full cursor-pointer items-center gap-2 font-bold whitespace-nowrap transition-colors;
+
+    &:after {
+      @apply bg-brand-teal absolute bottom-4.5 left-0 h-0.75 w-full origin-left scale-x-0 transition-transform content-[''];
+    }
+  }
+
   .header-item {
     @apply h-full;
+
     &:hover .header-link {
       @apply text-brand-teal;
     }
@@ -52,6 +51,7 @@
 
   .dropdown__featured-link {
     @apply flex items-center gap-3;
+
     svg {
       @apply bg-brand-teal/10 text-brand-teal block size-9 rounded-lg p-2;
     }

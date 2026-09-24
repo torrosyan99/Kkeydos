@@ -13,17 +13,35 @@
   --color-brand-light: #f6f7f8;
   --color-brand-light-alt: #f8fafc;
   --color-brand-gray: #64748b;
+  --color-brand-slate: #334155;
+  --color-brand-blue: #1764ca;
+  --color-brand-muted-gray: #52606d;
+  --color-brand-muted-gray-alt: #687580;
+  --color-bottom-bg: #f1f5f9;
+
+  --breakpoint-desktop: 1920px;
+  --breakpoint-middle: 834px;
+  --breakpoint-mobile: 32.5rem;
 
   --spacing-section-mobile: 64px;
   --spacing-section-tablet: 80px;
   --spacing-section-desktop: 96px;
 
   --shadow-default: 0 12px 32px rgb(15 23 42 / 0.1);
+  --shadow-hover: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
 
 @layer base {
   body {
-    @apply font-outfit text-primary bg-bg overflow-hidden;
+    @apply font-outfit text-primary bg-bg flex min-h-screen flex-col;
+  }
+
+  main {
+    @apply grow overflow-hidden pt-20;
+  }
+  input,
+  textarea {
+    @apply outline-none focus:ring-0 focus:outline-none focus-visible:outline-none;
   }
 
   h1,
@@ -59,26 +77,34 @@
     @apply text-[20px] leading-[1.2] max-md:text-[18px];
   }
 
-  div[data-accordion] {
-    @apply overflow-hidden;
-  }
-
-  button[data-accordion-trigger] {
-    @apply transition-transform;
-  }
-
-  button[data-accordion-button] {
-    @apply cursor-pointer;
+  button[data-accordion-trigger] svg,
+  button[data-card-trigger] svg {
+    @apply shrink-0 transition-transform;
   }
 
   div[data-accordion-content] {
     @apply grid grid-rows-[0fr] overflow-hidden transition-[grid-template-rows];
   }
 
-  div[data-accordion-content] > div {
+  @media (max-width: 833px) {
+    div[data-card-content] {
+      @apply grid grid-rows-[0fr] overflow-hidden transition-[grid-template-rows];
+    }
+    div[data-card][data-open='true'] div[data-card-content] {
+      @apply grid-rows-[1fr];
+    }
+  }
+  div[data-card-content],
+  div[data-card-content] > div {
+    @apply h-full;
+  }
+  div[data-accordion-content] > div,
+  div[data-card-content] > div {
     @apply overflow-hidden;
   }
-  div[data-accordion][data-open='true'] button[data-accordion-trigger] svg {
+
+  button[data-accordion-trigger][aria-expanded='true'] svg,
+  button[data-card-trigger][aria-expanded='true'] svg {
     @apply rotate-180;
   }
 
