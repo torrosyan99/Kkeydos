@@ -274,6 +274,9 @@
   .bottom-0 {
     bottom: 0px;
   }
+  .bottom-1\/2 {
+    bottom: calc(1 / 2 * 100%);
+  }
   .bottom-6 {
     bottom: calc(var(--spacing) * 6);
   }
@@ -303,6 +306,9 @@
   }
   .bottom-\[25\%\] {
     bottom: 25%;
+  }
+  .bottom-\[50\%\] {
+    bottom: 50%;
   }
   .left-0 {
     left: 0px;
