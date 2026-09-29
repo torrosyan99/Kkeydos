@@ -39,7 +39,7 @@
     >
       <div class="page-container flex h-20 items-center gap-10">
         <a class="mr-auto" href="/" aria-label="KKEYDOS home">
-          <img class="h-14 w-auto max-xl:h-12" src="assets/images/logo.png" alt="KKEYDOS logo" />
+          <img class="h-16 w-auto max-xl:h-14" src="./assets/images/logo.png" alt="KKEYDOS logo" />
         </a>
 
         <nav class="h-full max-lg:hidden" aria-label="Primary navigation">
@@ -47,7 +47,7 @@
             <div class="header-item">
               <a class="header-link" href="#">
                 Services
-	              <svg class="size-5 transition-transform">
+                <svg aria-hidden="true" class="size-5 transition-transform">
                   <use href="assets/images/icons.svg#chevron-bottom"></use>
                 </svg>
               </a>
@@ -327,7 +327,7 @@
             <div class="header-item">
               <a class="header-link" href="#">
                 Technologies
-                <svg class="size-5 transition-transform">
+                <svg aria-hidden="true" class="size-5 transition-transform">
                   <use href="assets/images/icons.svg#chevron-bottom"></use>
                 </svg>
               </a>
@@ -607,7 +607,7 @@
             <div class="header-item">
               <a class="header-link" href="#">
                 Industries
-                <svg class="size-5 transition-transform">
+                <svg aria-hidden="true" class="size-5 transition-transform">
                   <use href="assets/images/icons.svg#chevron-bottom"></use>
                 </svg>
               </a>
@@ -839,7 +839,7 @@
             <div class="header-item">
               <a class="header-link" href="#">
                 About
-                <svg class="size-5 transition-transform">
+                <svg aria-hidden="true" class="size-5 transition-transform">
                   <use href="assets/images/icons.svg#chevron-bottom"></use>
                 </svg>
               </a>
@@ -968,7 +968,7 @@
               aria-controls="menu-services"
             >
               Services
-              <svg class="size-4">
+              <svg aria-hidden="true" class="size-4">
                 <use href="assets/images/icons.svg#chevron-bottom"></use>
               </svg>
             </button>
@@ -1028,7 +1028,7 @@
               aria-controls="menu-technologies"
             >
               Technologies
-              <svg class="size-4">
+              <svg aria-hidden="true" class="size-4">
                 <use href="assets/images/icons.svg#chevron-bottom"></use>
               </svg>
             </button>
@@ -1087,7 +1087,7 @@
               aria-controls="menu-industries"
             >
               Industries
-              <svg class="size-4">
+              <svg aria-hidden="true" class="size-4">
                 <use href="assets/images/icons.svg#chevron-bottom"></use>
               </svg>
             </button>
@@ -1146,7 +1146,7 @@
               aria-controls="menu-about"
             >
               About
-              <svg class="size-4">
+              <svg aria-hidden="true" class="size-4">
                 <use href="assets/images/icons.svg#chevron-bottom"></use>
               </svg>
             </button>
@@ -1704,270 +1704,457 @@
       </section>
 
       <section
-        class="section-margin z-5  bg-brand-light pb-section-desktop max-lg:pb-section-tablet max-md:pb-section-mobile relative overflow-hidden"
+        class="section-margin bg-brand-light pb-section-desktop max-lg:pb-section-tablet max-md:pb-section-mobile relative z-1 overflow-hidden"
       >
         <div class="top-oval"></div>
 
-        <div class="page-container  px-20 relative max-w-7xl">
-	        <div
-			        id="featured-slider"
-			        class="shadow-default overflow-hidden rounded-3xl bg-[#fcfbfa] max-md:rounded-2xl"
-	        >
-		        <div class="swiper w-full" data-featured-slider>
-			        <div class="swiper-wrapper">
-				        <div class="swiper-slide">
-					        <div
-							        class="mx-auto flex max-w-285 items-center gap-10 p-12 max-lg:flex-col max-lg:gap-6 max-lg:p-6"
-					        >
-						        <div class="shrink-0 max-lg:w-full">
-							        <p
-									        class="text-brand-gray relative inline-block pr-12 text-sm font-medium uppercase max-xl:text-xs"
-							        >
-								        As featured in
-								        <span class="bg-brand-orange absolute top-1/2 right-0 h-px w-8"></span>
-							        </p>
+        <div class="page-container relative max-w-7xl px-20">
+          <div
+            id="featured-slider"
+            class="shadow-default overflow-hidden rounded-3xl bg-[#fcfbfa] max-md:rounded-2xl"
+          >
+            <div class="swiper w-full" data-featured-slider>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div
+                    class="mx-auto flex max-w-285 items-center gap-10 p-12 max-lg:flex-col max-lg:gap-6 max-lg:p-6"
+                  >
+                    <div class="shrink-0 max-lg:w-full">
+                      <p
+                        class="text-brand-gray relative inline-block pr-12 text-sm font-medium uppercase max-xl:text-xs"
+                      >
+                        As featured in
+                        <span class="bg-brand-orange absolute top-1/2 right-0 h-px w-8"></span>
+                      </p>
 
-							        <img
-									        class="mt-5 h-8 w-auto max-lg:h-6"
-									        src="assets/images/featured/mid-day.webp"
-									        alt="Mid-Day"
-									        loading="lazy"
-									        decoding="async"
-							        />
+                      <img
+                        class="mt-5 h-8 w-auto max-lg:h-6"
+                        src="assets/images/pages/homepage/featured/mid-day.webp"
+                        alt="Mid-Day"
+                        loading="lazy"
+                        decoding="async"
+                      />
 
-							        <h2 class="mt-5 font-bold">
-								        <span class="text-[#9aa1a8]"> Next </span>
+                      <h2 class="mt-5 font-bold">
+                        <span class="text-[#9aa1a8]"> Next </span>
 
-								        <span class="text-[#2b3138]"> Gen Brands </span>
+                        <span class="text-[#2b3138]"> Gen Brands </span>
 
-								        <span class="text-brand-orange block"> of India </span>
-							        </h2>
+                        <span class="text-brand-orange block"> of India </span>
+                      </h2>
 
-							        <p class="text-brand-gray mt-5 max-w-125 text-lg max-lg:text-base">
-								        KKEYDOS featured in Mid-Day for its innovation, impact, and contribution to
-								        India’s next generation of digital brands.
-							        </p>
+                      <p class="text-brand-gray mt-5 max-w-125 text-lg max-lg:text-base">
+                        KKEYDOS featured in Mid-Day for its innovation, impact, and contribution to
+                        India’s next generation of digital brands.
+                      </p>
 
-							        <div class="mt-6">
-								        <a
-										        href="https://www.mid-day.com/buzz/article/next-gen-brands-of-india-july-2026-10413"
-										        class="group bg-primary inline-flex min-h-13 items-center gap-3 rounded-full px-7 text-base font-semibold text-white transition-colors hover:bg-[#2b3138] max-xl:min-h-12 max-xl:px-6 max-xl:text-sm"
-								        >
-									        Read the Article
+                      <div class="mt-6">
+                        <a
+                          href="https://www.mid-day.com/buzz/article/next-gen-brands-of-india-july-2026-10413"
+                          class="group bg-primary inline-flex min-h-13 items-center gap-3 rounded-full px-7 text-base font-semibold text-white transition-colors hover:bg-[#2b3138] max-xl:min-h-12 max-xl:px-6 max-xl:text-sm"
+                        >
+                          Read the Article
 
-									        <svg
-											        class="size-4 transition-transform ease-out group-hover:translate-x-1"
-											        aria-hidden="true"
-									        >
-										        <use href="assets/images/icons.svg#arrow"></use>
-									        </svg>
-								        </a>
-							        </div>
-						        </div>
+                          <svg
+                            class="size-4 transition-transform ease-out group-hover:translate-x-1"
+                            aria-hidden="true"
+                          >
+                            <use href="assets/images/icons.svg#arrow"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
 
-						        <div class="ml-auto w-full max-w-120 max-lg:order-first max-lg:max-w-100 max-lg:mx-auto">
-							        <img
-									        class="h-auto w-full object-contain"
-									        src="assets/images/featured/featured-visual-midday.png"
-									        alt="Mid-Day article “Next Gen Brands of India” featuring KKEYDOS"
-									        loading="lazy"
-									        decoding="async"
-							        />
-						        </div>
-					        </div>
-				        </div>
+                    <div
+                      class="ml-auto w-full max-w-120 max-lg:order-first max-lg:mx-auto max-lg:max-w-100"
+                    >
+                      <img
+                        class="h-auto w-full object-contain"
+                        src="assets/images/pages/homepage/featured/featured-visual-midday.png"
+                        alt="Mid-Day article “Next Gen Brands of India” featuring KKEYDOS"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                  </div>
+                </div>
 
-				        <div class="swiper-slide">
-					        <div
-							        class="mx-auto flex max-w-285 items-center gap-10 p-12 max-lg:flex-col max-lg:gap-6 max-lg:p-6"
-					        >
-						        <div class="shrink-0 max-lg:w-full">
-							        <p
-									        class="text-brand-gray relative inline-block pr-12 text-sm font-medium uppercase max-xl:text-xs"
-							        >
-								        As featured in
-								        <span class="bg-brand-orange absolute top-1/2 right-0 h-px w-8"></span>
-							        </p>
+                <div class="swiper-slide">
+                  <div
+                    class="mx-auto flex max-w-285 items-center gap-10 p-12 max-lg:flex-col max-lg:gap-6 max-lg:p-6"
+                  >
+                    <div class="shrink-0 max-lg:w-full">
+                      <p
+                        class="text-brand-gray relative inline-block pr-12 text-sm font-medium uppercase max-xl:text-xs"
+                      >
+                        As featured in
+                        <span class="bg-brand-orange absolute top-1/2 right-0 h-px w-8"></span>
+                      </p>
 
-							        <span
-									        class="mt-5 flex h-8 w-fit items-center bg-black px-6 py-2 text-2xl font-bold text-white"
-							        >
-              Hypetrics
-            </span>
+                      <span
+                        class="mt-5 flex h-8 w-fit items-center bg-black px-6 py-2 text-2xl font-bold text-white"
+                      >
+                        Hypetrics
+                      </span>
 
-							        <h2 class="mt-5 font-bold">
-								        <span class="text-[#9aa1a8]"> 50 </span>
+                      <h2 class="mt-5 font-bold">
+                        <span class="text-[#9aa1a8]"> 50 </span>
 
-								        <span class="text-[#2b3138]"> Companies Making </span>
+                        <span class="text-[#2b3138]"> Companies Making </span>
 
-								        <span class="text-brand-orange block"> Their Move Forward </span>
-							        </h2>
+                        <span class="text-brand-orange block"> Their Move Forward </span>
+                      </h2>
 
-							        <p class="text-brand-gray mt-5 max-w-125 text-lg max-lg:text-base">
-								        KKEYDOS recognised by Hypetrics among the companies driving real momentum
-								        and measurable growth.
-							        </p>
+                      <p class="text-brand-gray mt-5 max-w-125 text-lg max-lg:text-base">
+                        KKEYDOS recognised by Hypetrics among the companies driving real momentum
+                        and measurable growth.
+                      </p>
 
-							        <div class="mt-6">
-								        <a
-										        href="https://hypetrics.com/forward-tracker/50-companies-making-their-move-forward/"
-										        class="group bg-primary inline-flex min-h-13 items-center gap-3 rounded-full px-7 text-base font-semibold text-white transition-colors hover:bg-[#2b3138] max-xl:min-h-12 max-xl:px-6 max-xl:text-sm"
-								        >
-									        Read the Article
+                      <div class="mt-6">
+                        <a
+                          href="https://hypetrics.com/forward-tracker/50-companies-making-their-move-forward/"
+                          class="group bg-primary inline-flex min-h-13 items-center gap-3 rounded-full px-7 text-base font-semibold text-white transition-colors hover:bg-[#2b3138] max-xl:min-h-12 max-xl:px-6 max-xl:text-sm"
+                        >
+                          Read the Article
 
-									        <svg
-											        class="size-4 transition-transform ease-out group-hover:translate-x-1"
-											        aria-hidden="true"
-									        >
-										        <use href="assets/images/icons.svg#arrow"></use>
-									        </svg>
-								        </a>
-							        </div>
-						        </div>
+                          <svg
+                            class="size-4 transition-transform ease-out group-hover:translate-x-1"
+                            aria-hidden="true"
+                          >
+                            <use href="assets/images/icons.svg#arrow"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
 
-						        <!-- Image -->
-						        <div class="ml-auto w-full max-w-120 max-lg:order-first max-lg:max-w-100 max-lg:mx-auto">
-							        <img
-									        class="h-auto w-full object-contain"
-									        src="assets/images/featured/featured-visual-hypetrics.png"
-									        alt="Hypetrics article “50 Companies Making Their Move Forward” featuring KKEYDOS"
-									        loading="lazy"
-									        decoding="async"
-							        />
-						        </div>
-					        </div>
-				        </div>
-			        </div>
-		        </div>
+                    <!-- Image -->
+                    <div
+                      class="ml-auto w-full max-w-120 max-lg:order-first max-lg:mx-auto max-lg:max-w-100"
+                    >
+                      <img
+                        class="h-auto w-full object-contain"
+                        src="assets/images/pages/homepage/featured/featured-visual-hypetrics.png"
+                        alt="Hypetrics article “50 Companies Making Their Move Forward” featuring KKEYDOS"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-		        <!-- Slider Controls -->
-		        <div
-				        class="border-brand-border mx-12 flex min-h-20 items-center justify-between gap-3 border-t py-4 max-lg:mx-6"
-		        >
-			        <button
-					        type="button"
-					        class="group inline-flex cursor-pointer items-center gap-4 justify-self-start text-base font-medium text-[#2b3138] disabled:cursor-default disabled:opacity-40"
-					        data-featured-prev
-			        >
-      <span
-		      class="border-brand-border bg-bg inline-flex size-12 items-center justify-center rounded-full border transition-transform ease-out group-hover:-translate-x-1 group-disabled:translate-x-0 max-md:size-10"
-      >
-        <svg class="size-4 rotate-180" aria-hidden="true">
-          <use href="assets/images/icons.svg#arrow"></use>
-        </svg>
-      </span>
+            <!-- Slider Controls -->
+            <div
+              class="border-brand-border mx-12 flex min-h-20 items-center justify-between gap-3 border-t py-4 max-lg:mx-6"
+            >
+              <button
+                type="button"
+                class="group inline-flex cursor-pointer items-center gap-4 justify-self-start text-base font-medium text-[#2b3138] disabled:cursor-default disabled:opacity-40"
+                data-featured-prev
+              >
+                <span
+                  class="border-brand-border bg-bg inline-flex size-12 items-center justify-center rounded-full border transition-transform ease-out group-hover:-translate-x-1 group-disabled:translate-x-0 max-md:size-10"
+                >
+                  <svg class="size-4 rotate-180" aria-hidden="true">
+                    <use href="assets/images/icons.svg#arrow"></use>
+                  </svg>
+                </span>
 
-				        <span class="max-lg:hidden">Previous</span>
-			        </button>
+                <span class="max-lg:hidden">Previous</span>
+              </button>
 
-			        <div class="orange-pagination" data-featured-pagination></div>
+              <div class="orange-pagination" data-featured-pagination></div>
 
-			        <button
-					        type="button"
-					        class="group inline-flex cursor-pointer items-center gap-4 justify-self-end text-base font-medium text-[#2b3138] disabled:cursor-default disabled:opacity-40"
-					        data-featured-next
-			        >
-				        <span class="max-lg:hidden">Next</span>
+              <button
+                type="button"
+                class="group inline-flex cursor-pointer items-center gap-4 justify-self-end text-base font-medium text-[#2b3138] disabled:cursor-default disabled:opacity-40"
+                data-featured-next
+              >
+                <span class="max-lg:hidden">Next</span>
 
-				        <span
-						        class="border-brand-border bg-bg inline-flex size-12 items-center justify-center rounded-full border transition-transform ease-out group-hover:translate-x-1 group-disabled:translate-x-0 max-md:size-10"
-				        >
-        <svg class="size-4" aria-hidden="true">
-          <use href="assets/images/icons.svg#arrow"></use>
-        </svg>
-      </span>
-			        </button>
-		        </div>
-	        </div>        </div>
-	      <div class="flex flex-col gap-1 max-md:gap-6 bg-brand-light inset-x-0 bottom-1/2 -z-1  absolute ">
-		      <div
-				      class="w-full overflow-hidden"
-				      data-marquee
-				      data-marquee-gap="0"
-				      data-marquee-direction="left"
-		      >
-			      <div class="w-max">
-				      <div class="flex shrink-0 items-center">
-					      <a class="tech-item" href="#">HTML5 / CSS3</a>
-					      <a class="tech-item" href="#">JavaScript</a>
-					      <a class="tech-item" href="#">TypeScript</a>
-					      <a class="tech-item" href="#">React.js</a>
-					      <a class="tech-item" href="#">Next.js</a>
-					      <a class="tech-item" href="#">Vue.js</a>
-					      <a class="tech-item" href="#">Flutter</a>
-					      <a class="tech-item" href="#">React Native</a>
-					      <a class="tech-item" href="#">Node.js</a>
-					      <a class="tech-item" href="#">PHP (Laravel)</a>
-					      <a class="tech-item" href="#">Python</a>
-					      <a class="tech-item" href="#">Java</a>
-					      <a class="tech-item" href="#">.NET</a>
-					      <a class="tech-item" href="#">MySQL</a>
-					      <a class="tech-item" href="#">PostgreSQL</a>
-					      <a class="tech-item" href="#">MongoDB</a>
-					      <a class="tech-item" href="#">AWS</a>
-					      <a class="tech-item" href="#">Microsoft Azure</a>
-					      <a class="tech-item" href="#">Google Cloud</a>
-					      <a class="tech-item" href="#">Firebase</a>
-					      <a class="tech-item" href="#">Docker</a>
-					      <a class="tech-item" href="#">AI / Machine Learning</a>
-					      <a class="tech-item" href="#">OpenAI / LLM Integration</a>
-					      <a class="tech-item" href="#">REST API / GraphQL</a>
-				      </div>
-			      </div>
-		      </div>
+                <span
+                  class="border-brand-border bg-bg inline-flex size-12 items-center justify-center rounded-full border transition-transform ease-out group-hover:translate-x-1 group-disabled:translate-x-0 max-md:size-10"
+                >
+                  <svg class="size-4" aria-hidden="true">
+                    <use href="assets/images/icons.svg#arrow"></use>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-brand-light absolute inset-x-0 bottom-1/2 -z-1 flex flex-col gap-1 max-md:gap-6"
+        >
+          <div
+            class="w-full overflow-hidden"
+            data-marquee
+            data-marquee-gap="0"
+            data-marquee-direction="left"
+          >
+            <div class="w-max">
+              <div class="flex shrink-0 items-center">
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >HTML5 / CSS3</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >JavaScript</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >TypeScript</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >React.js</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >Next.js</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >Vue.js</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >Flutter</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >React Native</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >Node.js</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >PHP (Laravel)</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >Python</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >Java</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >.NET</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >MySQL</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >PostgreSQL</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >MongoDB</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >AWS</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >Microsoft Azure</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >Google Cloud</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >Firebase</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >Docker</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >AI / Machine Learning</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >OpenAI / LLM Integration</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >REST API / GraphQL</a
+                >
+              </div>
+            </div>
+          </div>
 
-		      <div
-				      class="w-full overflow-hidden"
-				      data-marquee
-				      data-marquee-gap="0"
-				      data-marquee-direction="right"
-		      >
-			      <div class="w-max">
-				      <div class="flex shrink-0 items-center">
-					      <a class="tech-item" href="#">HTML5 / CSS3</a>
-					      <a class="tech-item" href="#">JavaScript</a>
-					      <a class="tech-item" href="#">TypeScript</a>
-					      <a class="tech-item" href="#">React.js</a>
-					      <a class="tech-item" href="#">Next.js</a>
-					      <a class="tech-item" href="#">Vue.js</a>
-					      <a class="tech-item" href="#">Flutter</a>
-					      <a class="tech-item" href="#">React Native</a>
-					      <a class="tech-item" href="#">Node.js</a>
-					      <a class="tech-item" href="#">PHP (Laravel)</a>
-					      <a class="tech-item" href="#">Python</a>
-					      <a class="tech-item" href="#">Java</a>
-					      <a class="tech-item" href="#">.NET</a>
-					      <a class="tech-item" href="#">MySQL</a>
-					      <a class="tech-item" href="#">PostgreSQL</a>
-					      <a class="tech-item" href="#">MongoDB</a>
-					      <a class="tech-item" href="#">AWS</a>
-					      <a class="tech-item" href="#">Microsoft Azure</a>
-					      <a class="tech-item" href="#">Google Cloud</a>
-					      <a class="tech-item" href="#">Firebase</a>
-					      <a class="tech-item" href="#">Docker</a>
-					      <a class="tech-item" href="#">AI / Machine Learning</a>
-					      <a class="tech-item" href="#">OpenAI / LLM Integration</a>
-					      <a class="tech-item" href="#">REST API / GraphQL</a>
-				      </div>
-			      </div>
-		      </div>
-	      </div>
-
+          <div
+            class="w-full overflow-hidden"
+            data-marquee
+            data-marquee-gap="0"
+            data-marquee-direction="right"
+          >
+            <div class="w-max">
+              <div class="flex shrink-0 items-center">
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >HTML5 / CSS3</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >JavaScript</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >TypeScript</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >React.js</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >Next.js</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >Vue.js</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >Flutter</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >React Native</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >Node.js</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >PHP (Laravel)</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >Python</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >Java</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >.NET</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >MySQL</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >PostgreSQL</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >MongoDB</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >AWS</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >Microsoft Azure</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >Google Cloud</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >Firebase</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >Docker</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >AI / Machine Learning</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >OpenAI / LLM Integration</a
+                >
+                <a
+                  class="text-brand-muted-gray-alt/20 hover:text-brand-orange cursor-pointer pr-18 text-[52px] leading-tight font-bold transition-colors max-md:pr-8 max-md:text-[32px]"
+                  href="#"
+                  >REST API / GraphQL</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-
-        <a class="sliding-btn mx-auto mt-18 flex w-44 max-sm:mt-14" href="#">
-          <span>
-            Our full repertoire
-            <svg class="size-4 shrink-0" aria-hidden="true">
-              <use href="assets/images/icons.svg#arrow-right"></use>
-            </svg>
-          </span>
-        </a>
-
-
       <section class="-mt-12 max-xl:mt-0 max-xl:pt-10">
-        <div class="page-container-compact relative">
+        <div class="page-container-compact relative z-2">
           <div class="flex gap-24 max-2xl:gap-6">
             <img
               src="assets/images/backgrounds/testimonials.webp"
@@ -2932,42 +3119,52 @@
             <li
               class="text-brand-muted-gray max-md:border-brand-border flex items-center justify-center gap-3 px-5 text-sm font-semibold max-lg:flex-col max-lg:text-center max-md:flex-row max-md:justify-start max-md:rounded-xl max-md:border max-md:p-3"
             >
-              <svg class="size-12 shrink-0" aria-hidden="true">
-                <use href="assets/images/icons.svg#solution-architecture"></use>
-              </svg>
+              <span class="icon-circle icon-blue">
+                <svg aria-hidden="true">
+                  <use href="assets/images/icons.svg#hierarchy"></use>
+                </svg>
+              </span>
 
               Solution Architecture
             </li>
             <li
               class="text-brand-muted-gray max-md:border-brand-border flex items-center justify-center gap-3 px-5 text-sm font-semibold max-lg:flex-col max-lg:text-center max-md:flex-row max-md:justify-start max-md:rounded-xl max-md:border max-md:p-3"
             >
-              <svg class="size-12 shrink-0" aria-hidden="true">
-                <use href="assets/images/icons.svg#product-ux"></use>
-              </svg>
+              <span class="icon-circle icon-orange">
+                <svg aria-hidden="true">
+                  <use href="assets/images/icons.svg#pencil"></use>
+                </svg>
+              </span>
               Product &amp; UX
             </li>
             <li
               class="text-brand-muted-gray max-md:border-brand-border flex items-center justify-center gap-3 px-5 text-sm font-semibold max-lg:flex-col max-lg:text-center max-md:flex-row max-md:justify-start max-md:rounded-xl max-md:border max-md:p-3"
             >
-              <svg class="size-12 shrink-0" aria-hidden="true">
-                <use href="assets/images/icons.svg#engineering"></use>
-              </svg>
+              <span class="icon-circle icon-purple">
+                <svg aria-hidden="true">
+                  <use href="assets/images/icons.svg#code"></use>
+                </svg>
+              </span>
               Engineering
             </li>
             <li
               class="text-brand-muted-gray max-md:border-brand-border flex items-center justify-center gap-3 px-5 text-sm font-semibold max-lg:flex-col max-lg:text-center max-md:flex-row max-md:justify-start max-md:rounded-xl max-md:border max-md:p-3"
             >
-              <svg class="size-12 shrink-0" aria-hidden="true">
-                <use href="assets/images/icons.svg#ai-data"></use>
-              </svg>
+              <span class="icon-circle icon-green">
+                <svg aria-hidden="true">
+                  <use href="assets/images/icons.svg#sparkles"></use>
+                </svg>
+              </span>
               AI &amp; Data
             </li>
             <li
               class="text-brand-muted-gray max-md:border-brand-border max-mobile:col-span-1 flex items-center justify-center gap-3 px-5 text-sm font-semibold max-lg:flex-col max-lg:text-center max-md:col-span-2 max-md:flex-row max-md:justify-start max-md:rounded-xl max-md:border max-md:p-3"
             >
-              <svg class="size-12 shrink-0" aria-hidden="true">
-                <use href="assets/images/icons.svg#quality-cloud"></use>
-              </svg>
+              <span class="icon-circle icon-orange">
+                <svg aria-hidden="true">
+                  <use href="assets/images/icons.svg#rocket"></use>
+                </svg>
+              </span>
               Quality &amp; Cloud
             </li>
           </ul>
@@ -3001,22 +3198,22 @@
             </p>
           </div>
 
-          <div
+          <ul
             class="max-middle:grid-cols-1 max-middle:gap-2 grid grid-cols-3 gap-8"
             data-cards="one-active"
           >
-            <div
+            <li
               class="shadow-default group max-middle:shadow-none max-middle:border max-middle:border-brand-border max-middle:rounded-md max-middle:p-4 max-middle:data-[open=true]:border-brand-orange relative z-1 overflow-hidden rounded-xl bg-white p-6"
               data-card
               data-open="true"
             >
               <button
-                class="max-middle:flex hidden w-full items-center justify-between gap-2 text-start text-lg"
+                class="max-middle:flex hidden w-full items-center justify-between gap-2 text-start text-lg group-data-[open=true]:font-bold"
                 data-card-trigger
                 aria-expanded="true"
               >
-                Build a complete team around your product.
-                <svg class="size-5">
+                <span> Build a complete team around your product. </span>
+                <svg aria-hidden="true" class="size-5">
                   <use href="assets/images/icons.svg#chevron-bottom"></use>
                 </svg>
               </button>
@@ -3076,7 +3273,7 @@
                       </svg>
                     </a>
                     <img
-                      src="assets/images/team-flow/engagement-01.svg"
+                      src="assets/images/pages/homepage/cards/engagement-01.svg"
                       width="112"
                       height="112"
                       alt=""
@@ -3095,20 +3292,20 @@
               <div
                 class="engagement-reveal max-middle:hidden group-hover:[--engagement-radius:180%]"
               ></div>
-            </div>
+            </li>
 
-            <div
+            <li
               class="shadow-default group max-middle:shadow-none max-middle:border max-middle:border-brand-border max-middle:rounded-md max-middle:p-4 max-middle:data-[open=true]:border-brand-orange relative z-1 overflow-hidden rounded-xl bg-white p-6"
               data-card
               data-open="false"
             >
               <button
-                class="max-middle:flex hidden w-full items-center justify-between gap-2 text-start text-lg"
+                class="max-middle:flex hidden w-full items-center justify-between gap-2 text-start text-lg group-data-[open=true]:font-bold"
                 data-card-trigger
                 aria-expanded="false"
               >
-                Turn your idea into a market-ready product.
-                <svg class="size-5">
+                <span> Turn your idea into a market-ready product. </span>
+                <svg aria-hidden="true" class="size-5">
                   <use href="assets/images/icons.svg#chevron-bottom"></use>
                 </svg>
               </button>
@@ -3168,7 +3365,7 @@
                       </svg>
                     </a>
                     <img
-                      src="assets/images/team-flow/engagement-02.svg"
+                      src="assets/images/pages/homepage/cards/engagement-02.svg"
                       width="112"
                       height="112"
                       alt=""
@@ -3187,20 +3384,20 @@
               <div
                 class="engagement-reveal max-middle:hidden group-hover:[--engagement-radius:180%]"
               ></div>
-            </div>
+            </li>
 
-            <div
+            <li
               class="shadow-default group max-middle:shadow-none max-middle:border max-middle:border-brand-border max-middle:rounded-md max-middle:p-4 max-middle:data-[open=true]:border-brand-orange relative z-1 overflow-hidden rounded-xl bg-white p-6"
               data-card
               data-open="false"
             >
               <button
-                class="max-middle:flex hidden w-full items-center justify-between gap-2 text-start text-lg"
+                class="max-middle:flex hidden w-full items-center justify-between gap-2 text-start text-lg group-data-[open=true]:font-bold"
                 data-card-trigger
                 aria-expanded="false"
               >
-                We take care of the complete delivery.
-                <svg class="size-5">
+                <span> We take care of the complete delivery. </span>
+                <svg aria-hidden="true" class="size-5">
                   <use href="assets/images/icons.svg#chevron-bottom"></use>
                 </svg>
               </button>
@@ -3260,7 +3457,7 @@
                       </svg>
                     </a>
                     <img
-                      src="assets/images/team-flow/engagement-03.svg"
+                      src="assets/images/pages/homepage/cards/engagement-03.svg"
                       width="112"
                       height="112"
                       alt=""
@@ -3279,8 +3476,8 @@
               <div
                 class="engagement-reveal max-middle:hidden group-hover:[--engagement-radius:180%]"
               ></div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </section>
 
         <section class="section-padding page-container-narrow">
@@ -3309,9 +3506,11 @@
               ></div>
               <ol class="flex flex-col gap-7">
                 <li class="flex items-center gap-7">
-                  <svg class="size-12 shrink-0" aria-hidden="true">
-                    <use href="assets/images/icons.svg#process-discover"></use>
-                  </svg>
+                  <span class="icon-circle icon-orange">
+                    <svg aria-hidden="true">
+                      <use href="assets/images/icons.svg#compass"></use>
+                    </svg>
+                  </span>
                   <div>
                     <h4>Discover</h4>
                     <p class="text-brand-gray mt-1">
@@ -3325,9 +3524,11 @@
                   >
                 </li>
                 <li class="flex items-center gap-7">
-                  <svg class="size-12 shrink-0" aria-hidden="true">
-                    <use href="assets/images/icons.svg#solution-architecture"></use>
-                  </svg>
+                  <span class="icon-circle icon-blue">
+                    <svg aria-hidden="true">
+                      <use href="assets/images/icons.svg#hierarchy"></use>
+                    </svg>
+                  </span>
                   <div>
                     <h4>Architect</h4>
                     <p class="text-brand-gray mt-1">
@@ -3341,9 +3542,11 @@
                   >
                 </li>
                 <li class="flex items-center gap-7">
-                  <svg class="size-12 shrink-0" aria-hidden="true">
-                    <use href="assets/images/icons.svg#product-ux"></use>
-                  </svg>
+                  <span class="icon-circle icon-orange">
+                    <svg aria-hidden="true">
+                      <use href="assets/images/icons.svg#pencil"></use>
+                    </svg>
+                  </span>
                   <div>
                     <h4>Design</h4>
                     <p class="text-brand-gray mt-1">
@@ -3357,9 +3560,11 @@
                   >
                 </li>
                 <li class="flex items-center gap-7">
-                  <svg class="size-12 shrink-0" aria-hidden="true">
-                    <use href="assets/images/icons.svg#engineering"></use>
-                  </svg>
+                  <span class="icon-circle icon-purple">
+                    <svg aria-hidden="true">
+                      <use href="assets/images/icons.svg#code"></use>
+                    </svg>
+                  </span>
                   <div>
                     <h4>Engineer</h4>
                     <p class="text-brand-gray mt-1">
@@ -3373,9 +3578,11 @@
                   >
                 </li>
                 <li class="flex items-center gap-7">
-                  <svg class="size-12 shrink-0" aria-hidden="true">
-                    <use href="assets/images/icons.svg#quality-cloud"></use>
-                  </svg>
+                  <span class="icon-circle icon-orange">
+                    <svg aria-hidden="true">
+                      <use href="assets/images/icons.svg#rocket"></use>
+                    </svg>
+                  </span>
                   <div>
                     <h4>Launch</h4>
                     <p class="text-brand-gray mt-1">
@@ -3388,9 +3595,11 @@
                   >
                 </li>
                 <li class="flex items-center gap-7">
-                  <svg class="size-12 shrink-0" aria-hidden="true">
-                    <use href="assets/images/icons.svg#process-scale"></use>
-                  </svg>
+                  <span class="icon-circle icon-blue">
+                    <svg aria-hidden="true">
+                      <use href="assets/images/icons.svg#chart-bar"></use>
+                    </svg>
+                  </span>
                   <div>
                     <h4>Scale</h4>
                     <p class="text-brand-gray mt-1">
@@ -3441,7 +3650,7 @@
                   <a class="flex h-full flex-col" href="#">
                     <span class="block aspect-8/5 w-full overflow-hidden rounded-xl">
                       <img
-                        src="assets/images/insights/ai-history.jpg"
+                        src="assets/images/pages/homepage/insights/ai-history.jpg"
                         alt="History and evolution of artificial intelligence"
                         loading="lazy"
                         width="365"
@@ -3469,7 +3678,7 @@
                   <a class="flex h-full flex-col" href="#">
                     <span class="block aspect-8/5 w-full overflow-hidden rounded-xl">
                       <img
-                        src="assets/images/insights/ai-insight-2.jpg"
+                        src="assets/images/pages/homepage/insights/ai-insight-2.jpg"
                         alt="iOS app design guidelines"
                         loading="lazy"
                         width="365"
@@ -3494,7 +3703,7 @@
                   <a class="flex h-full flex-col" href="#">
                     <span class="block aspect-8/5 w-full overflow-hidden rounded-xl">
                       <img
-                        src="assets/images/insights/ai-insight-3.jpg"
+                        src="assets/images/pages/homepage/insights/ai-insight-3.jpg"
                         alt="White box testing"
                         loading="lazy"
                         width="365"
@@ -3519,7 +3728,7 @@
                   <a class="flex h-full flex-col" href="#">
                     <span class="block aspect-8/5 w-full overflow-hidden rounded-xl">
                       <img
-                        src="assets/images/insights/scalability.jpg"
+                        src="assets/images/pages/homepage/insights/scalability.jpg"
                         alt="Cloud scalability and elasticity"
                         loading="lazy"
                         width="365"
@@ -3546,7 +3755,7 @@
                   <a class="flex h-full flex-col" href="#">
                     <span class="block aspect-8/5 w-full overflow-hidden rounded-xl">
                       <img
-                        src="assets/images/insights/android-dev.jpg"
+                        src="assets/images/pages/homepage/insights/android-dev.jpg"
                         alt="Android application development"
                         loading="lazy"
                         width="365"
@@ -3582,7 +3791,7 @@
         </div>
       </section>
 
-      <section class="section-margin bg-black text-white">
+      <section class="section-margin black-section text-white" data-cta-glow  >
         <div class="page-container grid grid-cols-2 gap-12 max-lg:grid-cols-1 max-lg:py-10">
           <div
             class="py-16 max-lg:order-1 max-lg:mx-auto max-lg:max-w-140 max-lg:py-0 max-lg:text-center"
@@ -3621,7 +3830,7 @@
             <div class="faq-item" data-accordion>
               <button class="faq-item__button" data-accordion-trigger aria-expanded="false">
                 What software development services do you provide?
-                <svg>
+                <svg aria-hidden="true">
                   <use href="assets/images/icons.svg#chevron-bottom"></use>
                 </svg>
               </button>
@@ -3637,7 +3846,7 @@
             <div class="faq-item" data-accordion>
               <button class="faq-item__button" data-accordion-trigger aria-expanded="false">
                 How quickly can a software project start?
-                <svg>
+                <svg aria-hidden="true">
                   <use href="assets/images/icons.svg#chevron-bottom"></use>
                 </svg>
               </button>
@@ -3654,7 +3863,7 @@
             <div class="faq-item" data-accordion>
               <button class="faq-item__button" data-accordion-trigger aria-expanded="false">
                 Can KKEYDOS collaborate with our existing team?
-                <svg>
+                <svg aria-hidden="true">
                   <use href="assets/images/icons.svg#chevron-bottom"></use>
                 </svg>
               </button>
@@ -3670,7 +3879,7 @@
             <div class="faq-item" data-accordion>
               <button class="faq-item__button" data-accordion-trigger aria-expanded="false">
                 Can you handle complete end-to-end product delivery?
-                <svg>
+                <svg aria-hidden="true">
                   <use href="assets/images/icons.svg#chevron-bottom"></use>
                 </svg>
               </button>
@@ -3686,7 +3895,7 @@
             <div class="faq-item" data-accordion>
               <button class="faq-item__button" data-accordion-trigger aria-expanded="false">
                 How do you ensure quality and security?
-                <svg>
+                <svg aria-hidden="true">
                   <use href="assets/images/icons.svg#chevron-bottom"></use>
                 </svg>
               </button>
@@ -3702,7 +3911,7 @@
             <div class="faq-item" data-accordion>
               <button class="faq-item__button" data-accordion-trigger aria-expanded="false">
                 Do you provide support after launch?
-                <svg>
+                <svg aria-hidden="true">
                   <use href="assets/images/icons.svg#chevron-bottom"></use>
                 </svg>
               </button>
@@ -3833,7 +4042,7 @@
               Get insights from the experts on building and scaling technology teams.
             </p>
             <form class="flex flex-wrap items-end gap-3">
-              <div class="max-w-50 max-xl:max-w-70 grow">
+              <div class="max-w-50 grow max-xl:max-w-70">
                 <label class="text-brand-muted-gray mb-1 block text-sm" for="footer-email">
                   Your e-mail address
                 </label>

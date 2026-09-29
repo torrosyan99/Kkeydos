@@ -3,7 +3,6 @@
     --cta-skew: -16deg;
     --cta-skew-offset: 7px;
 
-
     @apply relative isolate inline-flex h-12 items-center justify-center;
     @apply gap-2 pr-8 pl-6 font-semibold text-white;
 
@@ -96,5 +95,24 @@
     @apply border-primary inline-flex h-12 items-center justify-center gap-2 rounded-md border-2 px-4;
     @apply text-primary font-bold transition-colors;
     @apply hover:bg-primary hover:text-white;
+  }
+
+  .btn-light {
+    @apply inline-flex min-h-12 cursor-pointer items-center gap-3;
+    @apply rounded-md border border-[#d7dce3] bg-[#f6f7f8];
+    @apply p-2.5;
+    @apply transition-colors;
+
+    @apply aria-expanded:border-brand-orange;
+    @apply aria-expanded:bg-orange-50;
+    @apply aria-expanded:text-brand-orange;
+  }
+
+  .btn-black {
+    @apply inline-flex min-h-12 cursor-pointer items-center gap-3;
+    @apply   bg-black text-white;
+    @apply p-2.5;
+
+
   }
 }

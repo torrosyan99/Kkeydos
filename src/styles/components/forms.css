@@ -7,6 +7,6 @@
   }
 
   .textarea {
-    @apply h-auto resize-none;
+    @apply h-auto min-h-24 resize-none;
   }
 }
