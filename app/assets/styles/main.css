@@ -507,6 +507,9 @@
   .mr-auto {
     margin-right: auto;
   }
+  .-mb-8 {
+    margin-bottom: calc(var(--spacing) * -8);
+  }
   .mb-0 {
     margin-bottom: 0px;
   }
@@ -539,6 +542,9 @@
   }
   .mb-20 {
     margin-bottom: calc(var(--spacing) * 20);
+  }
+  .-ml-6 {
+    margin-left: calc(var(--spacing) * -6);
   }
   .ml-1 {
     margin-left: var(--spacing);
@@ -837,6 +843,9 @@
   .w-\[98\%\] {
     width: 98%;
   }
+  .w-\[110\%\] {
+    width: 110%;
+  }
   .w-auto {
     width: auto;
   }
@@ -854,6 +863,9 @@
   }
   .max-w-7xl {
     max-width: var(--container-7xl);
+  }
+  .max-w-24 {
+    max-width: calc(var(--spacing) * 24);
   }
   .max-w-50 {
     max-width: calc(var(--spacing) * 50);
@@ -2538,6 +2550,10 @@
     .max-xl\:rounded-xl {
       border-radius: var(--radius-xl);
     }
+    .max-xl\:border {
+      border-style: var(--tw-border-style);
+      border-width: 1px;
+    }
     .max-xl\:border-0 {
       border-style: var(--tw-border-style);
       border-width: 0px;
@@ -2553,6 +2569,9 @@
     .max-xl\:border-l-0 {
       border-left-style: var(--tw-border-style);
       border-left-width: 0px;
+    }
+    .max-xl\:bg-white {
+      background-color: var(--color-white);
     }
     .max-xl\:p-0 {
       padding: 0px;
@@ -2661,8 +2680,14 @@
     .max-lg\:mx-auto {
       margin-inline: auto;
     }
+    .max-lg\:mt-8 {
+      margin-top: calc(var(--spacing) * 8);
+    }
     .max-lg\:mt-30 {
       margin-top: calc(var(--spacing) * 30);
+    }
+    .max-lg\:mb-0 {
+      margin-bottom: 0px;
     }
     .max-lg\:hidden {
       display: none;
@@ -2691,6 +2716,9 @@
     }
     .max-lg\:max-w-140 {
       max-width: calc(var(--spacing) * 140);
+    }
+    .max-lg\:max-w-180 {
+      max-width: calc(var(--spacing) * 180);
     }
     .max-lg\:max-w-full {
       max-width: 100%;
@@ -2783,6 +2811,9 @@
     }
     .max-lg\:py-10 {
       padding-block: calc(var(--spacing) * 10);
+    }
+    .max-lg\:pt-0 {
+      padding-top: 0px;
     }
     .max-lg\:pt-6 {
       padding-top: calc(var(--spacing) * 6);
@@ -3174,6 +3205,9 @@
     }
     .max-sm\:mb-4 {
       margin-bottom: calc(var(--spacing) * 4);
+    }
+    .max-sm\:ml-0 {
+      margin-left: 0px;
     }
     .max-sm\:hidden {
       display: none;
