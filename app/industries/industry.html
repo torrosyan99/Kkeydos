@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth motion-reduce:scroll-auto">
 <head>
 	<meta charset="UTF-8"/>
 	<meta
@@ -26,7 +26,6 @@
 	/>
 	<link rel="icon" type="image/png" sizes="128x128" href="../assets/images/favicon.png"/>
 
-	<link href="../assets/libs/swiper/swiper.min.css" rel="stylesheet" type="text/css"/>
 	<link href="../assets/styles/main.css" rel="stylesheet" type="text/css"/>
 
 	<script src="../assets/scripts/pages/industry.js" type="module" defer></script>
@@ -1214,7 +1213,7 @@
 	</div>
 </header>
 
-<main class="min-h-10000">
+<main>
 	<section class="relative">
 		<div
 				class="absolute right-[calc(50%-960px)] top-0 -z-10 h-full w-183
@@ -1263,7 +1262,7 @@
 		<div class="page-container py-8 flex items-center justify-between">
 			<div class="text-white">
 				<div class="eyebrow text-brand-gray-alt">Supply Chain Software Development</div>
-				<h1 class="mb-3">Scale and optimize supply chain management.
+				<h1 class="mb-3">Scale and optimize supply chain management<span class="text-brand-orange">.</span>
 				</h1>
 				<p class="text-brand-gray-alt">Build software to streamline the entire supply chain.</p>
 			</div>
@@ -1612,128 +1611,79 @@
 	<section class="border-brand-border border-b py-6">
 		<div class="page-container flex gap-6 max-xl:flex-wrap max-md:flex-col">
 			<div class="flex-1">
-				<span class="eyebrow mb-3">AI Development Services</span>
-				<h4 class="tracking-tighter">
-					What we bring to <span class="text-brand-orange">AI development.</span>
-				</h4>
-				<ul class="mt-6 grid grid-cols-4 gap-4 max-lg:grid-cols-2 max-md:gap-2">
-					<li
-							class="max-md:border-brand-border max-md:bg-brand-light-alt max-md:rounded-2xl max-md:border max-md:p-4"
-					>
-                <span class="icon icon-blue">
-                  <svg aria-hidden="true">
-                    <use href="../assets/images/icons.svg#ai-agents" />
-                  </svg>
-                </span>
-						<h6 class="mt-3 text-sm">AI Agents</h6>
-						<p class="text-brand-gray mt-1 text-sm">Intelligent task automation</p>
+				<span class="eyebrow">Built for modern financial products</span>
+				<ul class="grid mt-5 grid-cols-5 gap-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-md:gap-2">
+					<li class="max-md:rounded-2xl max-md:border max-md:border-brand-border max-md:bg-brand-light-alt max-md:p-4">
+						<span class="icon icon-orange">
+							<svg aria-hidden="true"><use href="../assets/images/icons.svg#credit-card"></use></svg>
+						</span>
+						<h6 class="mt-3 text-sm">Digital Payments</h6>
+						<p class="mt-2 text-sm text-brand-gray">Payment gateways, transaction workflows and billing.</p>
 					</li>
-					<li
-							class="max-md:border-brand-border max-md:bg-brand-light-alt max-md:rounded-2xl max-md:border max-md:p-4"
-					>
-                <span class="icon icon-purple">
-                  <svg aria-hidden="true">
-                    <use href="../assets/images/icons.svg#sparkles" />
-                  </svg>
-                </span>
-						<h6 class="mt-3 text-sm">Generative AI</h6>
-						<p class="text-brand-gray mt-1 text-sm">LLM-powered applications</p>
+					<li class="max-md:rounded-2xl max-md:border max-md:border-brand-border max-md:bg-brand-light-alt max-md:p-4">
+						<span class="icon icon-orange">
+							<svg aria-hidden="true"><use href="../assets/images/icons.svg#chart-bar"></use></svg>
+						</span>
+						<h6 class="mt-3 text-sm">FinTech Platforms</h6>
+						<p class="mt-2 text-sm text-brand-gray">Custom financial applications and customer portals.</p>
 					</li>
-					<li
-							class="max-md:border-brand-border max-md:bg-brand-light-alt max-md:rounded-2xl max-md:border max-md:p-4"
-					>
-                <span class="icon icon-orange">
-                  <svg aria-hidden="true">
-                    <use href="../assets/images/icons.svg#settings" />
-                  </svg>
-                </span>
-						<h6 class="mt-3 text-sm">AI Automation</h6>
-						<p class="text-brand-gray mt-1 text-sm">Smarter business workflows</p>
+					<li class="max-md:rounded-2xl max-md:border max-md:border-brand-border max-md:bg-brand-light-alt max-md:p-4">
+						<span class="icon icon-orange">
+							<svg aria-hidden="true"><use href="../assets/images/icons.svg#database"></use></svg>
+						</span>
+						<h6 class="mt-3 text-sm">Lending &amp; Finance</h6>
+						<p class="mt-2 text-sm text-brand-gray">Loan workflows, applications, approvals and servicing.</p>
 					</li>
-					<li
-							class="max-md:border-brand-border max-md:bg-brand-light-alt max-md:rounded-2xl max-md:border max-md:p-4"
-					>
-                <span class="icon icon-green">
-                  <svg aria-hidden="true">
-                    <use href="../assets/images/icons.svg#microphone" />
-                  </svg>
-                </span>
-						<h6 class="mt-3 text-sm">Voice AI</h6>
-						<p class="text-brand-gray mt-1 text-sm">Conversational AI solutions</p>
+					<li class="max-md:rounded-2xl max-md:border max-md:border-brand-border max-md:bg-brand-light-alt max-md:p-4">
+						<span class="icon icon-orange">
+							<svg aria-hidden="true"><use href="../assets/images/icons.svg#chart-pie"></use></svg>
+						</span>
+						<h6 class="mt-3 text-sm">Financial Dashboards</h6>
+						<p class="mt-2 text-sm text-brand-gray">Real-time reporting, analytics and operational visibility.</p>
+					</li>
+					<li class="max-md:col-span-2 max-md:rounded-2xl max-md:border max-md:border-brand-border max-md:bg-brand-light-alt max-md:p-4">
+						<span class="icon icon-orange">
+							<svg aria-hidden="true"><use href="../assets/images/icons.svg#settings"></use></svg>
+						</span>
+						<h6 class="mt-3 text-sm">AI &amp; Automation</h6>
+						<p class="mt-2 text-sm text-brand-gray">Intelligent workflows, document processing and AI agents.</p>
 					</li>
 				</ul>
 			</div>
-			<div
-					class="border-brand-border max-w-150 flex-1 border-l pl-6 max-lg:max-w-full max-md:border-t max-md:border-l-0 max-md:pt-6 max-md:pl-0"
-			>
-				<span class="eyebrow mb-2">AI technologies we work with</span>
-				<p class="text-brand-gray max-w-104 text-sm">
-					Modern AI models, frameworks, and development tools integrated into production-ready
-					applications.
-				</p>
-				<ul class="mt-6 grid grid-cols-6 gap-4 text-center max-lg:grid-cols-3 max-md:gap-2">
-					<li class="border-brand-border bg-brand-light-alt rounded-xl border py-3.5">
-						<img
-								class="mx-auto mb-1 size-8"
-								src="../assets/images/brands/openai.svg"
-								alt="open-ai"
-						/>
-						<span class="text-[10px]">OpenAI</span>
+			<div class="w-100 shrink-0 border-l border-brand-border pl-6 max-lg:w-full max-lg:border-t max-lg:border-l-0 max-lg:pt-6 max-lg:pl-0">
+				<span class="eyebrow">Technologies we use</span>
+				<ul class="grid mt-5 grid-cols-4 gap-3 text-center text-xs max-md:gap-2">
+					<li class="group rounded-xl border border-brand-border bg-brand-light-alt py-3">
+						<svg class="mx-auto mb-1 size-8 text-brand-gray transition-colors group-hover:text-red-500" aria-hidden="true"><use href="../assets/images/icons.svg#laravel"></use></svg>
+						<span>Laravel</span>
 					</li>
-					<li class="border-brand-border bg-brand-light-alt rounded-xl border py-3.5">
-						<img
-								class="mx-auto mb-1 size-8"
-								src="../assets/images/brands/anthropic.svg"
-								alt=""
-								width="32"
-								height="32"
-								loading="lazy"
-						/>
-						<span class="text-[10px]">Anthropic</span>
+					<li class="group rounded-xl border border-brand-border bg-brand-light-alt py-3">
+						<svg class="mx-auto mb-1 size-8 text-brand-gray transition-colors group-hover:text-green-600" aria-hidden="true"><use href="../assets/images/icons.svg#nodejs"></use></svg>
+						<span>Node.js</span>
 					</li>
-					<li class="border-brand-border bg-brand-light-alt rounded-xl border py-3.5">
-						<img
-								class="mx-auto mb-1 size-8"
-								src="../assets/images/brands/gemini.svg"
-								alt=""
-								width="32"
-								height="32"
-								loading="lazy"
-						/>
-						<span class="text-[10px]">Gemini</span>
+					<li class="group rounded-xl border border-brand-border bg-brand-light-alt py-3">
+						<svg class="mx-auto mb-1 size-8 text-brand-gray transition-colors group-hover:text-primary" aria-hidden="true"><use href="../assets/images/icons.svg#nextjs"></use></svg>
+						<span>Next.js</span>
 					</li>
-					<li class="border-brand-border bg-brand-light-alt rounded-xl border py-3.5">
-						<img
-								class="mx-auto mb-1 size-8"
-								src="../assets/images/brands/python.svg"
-								alt=""
-								width="32"
-								height="32"
-								loading="lazy"
-						/>
-						<span class="text-[10px]">Python</span>
+					<li class="group rounded-xl border border-brand-border bg-brand-light-alt py-3">
+						<svg class="mx-auto mb-1 size-8 text-brand-gray transition-colors group-hover:text-cyan-400" aria-hidden="true"><use href="../assets/images/icons.svg#react"></use></svg>
+						<span>React</span>
 					</li>
-					<li class="border-brand-border bg-brand-light-alt rounded-xl border py-3.5">
-						<img
-								class="mx-auto mb-1 size-8"
-								src="../assets/images/brands/langchain.svg"
-								alt=""
-								width="32"
-								height="32"
-								loading="lazy"
-						/>
-						<span class="text-[10px]">LangChain</span>
+					<li class="group rounded-xl border border-brand-border bg-brand-light-alt py-3">
+						<img class="mx-auto mb-1 size-8 object-contain grayscale transition-[filter] group-hover:grayscale-0" src="../assets/images/brands/mysql.svg" alt="" width="32" height="32" loading="lazy" />
+						<span>MySQL</span>
 					</li>
-					<li class="border-brand-border bg-brand-light-alt rounded-xl border py-3.5">
-						<img
-								class="mx-auto mb-1 size-8"
-								src="../assets/images/brands/aws.svg"
-								alt=""
-								width="32"
-								height="32"
-								loading="lazy"
-						/>
-						<span class="text-[10px]">AWS</span>
+					<li class="rounded-xl border border-brand-border bg-brand-light-alt py-3">
+						<svg class="mx-auto mb-1 size-8 text-green-700" aria-hidden="true"><use href="../assets/images/icons.svg#mongodb"></use></svg>
+						<span>MongoDB</span>
+					</li>
+					<li class="group rounded-xl border border-brand-border bg-brand-light-alt py-3">
+						<img class="mx-auto mb-1 size-8 object-contain grayscale transition-[filter] group-hover:grayscale-0" src="../assets/images/brands/aws.svg" alt="" width="32" height="32" loading="lazy" />
+						<span>AWS</span>
+					</li>
+					<li class="rounded-xl border border-brand-border bg-brand-light-alt py-3">
+						<img class="mx-auto mb-1 size-8 object-contain" src="../assets/images/brands/openai.svg" alt="" width="32" height="32" loading="lazy" />
+						<span>AI</span>
 					</li>
 				</ul>
 			</div>
@@ -1764,19 +1714,494 @@
 		</div>
 	</section>
 
-	<div class="page-container flex items-start gap-48 max-xl:flex-col max-xl:gap-10 max-xl:p-0">
-		<div class="flex-1">
-			
+	<div class="industry-content page-container flex items-start gap-48 max-xl:flex-col max-xl:gap-10 max-xl:p-0">
+		<div class="flex-1 space-y-20 py-10 max-xl:w-full max-xl:px-5 max-md:space-y-16">
+			<section id="fintech-services" class="scroll-mt-40">
+				<h2>FinTech development services we provide<span class="text-brand-orange">.</span></h2>
+				<p class="mt-6 text-brand-muted-gray">
+					We build secure, scalable FinTech solutions that simplify financial operations, improve customer
+					experiences, and help businesses build and modernize digital financial products.
+				</p>
+				<ul class="mt-10 grid grid-cols-2 gap-8 max-middle:grid-cols-1">
+					<li class="flex items-start gap-3 border-t border-brand-border pt-6">
+						<svg class="mt-1 size-5 shrink-0 text-brand-orange" aria-hidden="true">
+							<use href="../assets/images/icons.svg#circle-check"></use>
+						</svg>
+						<div>
+							<h3 class="text-xl">01. Digital Payment Solutions</h3>
+							<p class="mt-4 text-brand-muted-gray">
+								Build payment platforms and transaction workflows with payment gateways, billing, recurring
+								payments, transaction tracking, and reconciliation.
+							</p>
+						</div>
+					</li>
+					<li class="flex items-start gap-3 border-t border-brand-border pt-6">
+						<svg class="mt-1 size-5 shrink-0 text-brand-orange" aria-hidden="true">
+							<use href="../assets/images/icons.svg#circle-check"></use>
+						</svg>
+						<div>
+							<h3 class="text-xl">02. FinTech Platform Development</h3>
+							<p class="mt-4 text-brand-muted-gray">
+								Develop custom web and mobile platforms for financial products, including customer onboarding,
+								account management, transactions, and reporting.
+							</p>
+						</div>
+					</li>
+					<li class="flex items-start gap-3 border-t border-brand-border pt-6">
+						<svg class="mt-1 size-5 shrink-0 text-brand-orange" aria-hidden="true">
+							<use href="../assets/images/icons.svg#circle-check"></use>
+						</svg>
+						<div>
+							<h3 class="text-xl">03. Lending &amp; Loan Management</h3>
+							<p class="mt-4 text-brand-muted-gray">
+								Streamline loan applications, document collection, verification, approvals, repayment schedules,
+								and loan servicing through centralized digital workflows.
+							</p>
+						</div>
+					</li>
+					<li class="flex items-start gap-3 border-t border-brand-border pt-6">
+						<svg class="mt-1 size-5 shrink-0 text-brand-orange" aria-hidden="true">
+							<use href="../assets/images/icons.svg#circle-check"></use>
+						</svg>
+						<div>
+							<h3 class="text-xl">04. Financial Analytics &amp; Dashboards</h3>
+							<p class="mt-4 text-brand-muted-gray">
+								Turn financial and operational data into actionable insights through custom dashboards, KPI
+								tracking, reporting, transaction analytics, and real-time visibility.
+							</p>
+						</div>
+					</li>
+					<li class="flex items-start gap-3 border-t border-brand-border pt-6">
+						<svg class="mt-1 size-5 shrink-0 text-brand-orange" aria-hidden="true">
+							<use href="../assets/images/icons.svg#circle-check"></use>
+						</svg>
+						<div>
+							<h3 class="text-xl">05. Financial Automation &amp; AI</h3>
+							<p class="mt-4 text-brand-muted-gray">
+								Automate repetitive financial processes with intelligent workflows, document processing, AI
+								agents, notifications, approvals, and data-driven automation.
+							</p>
+						</div>
+					</li>
+					<li class="flex items-start gap-3 border-t border-brand-border pt-6">
+						<svg class="mt-1 size-5 shrink-0 text-brand-orange" aria-hidden="true">
+							<use href="../assets/images/icons.svg#circle-check"></use>
+						</svg>
+						<div>
+							<h3 class="text-xl">06. FinTech Integrations &amp; APIs</h3>
+							<p class="mt-4 text-brand-muted-gray">
+								Connect your platform with payment gateways, banking APIs, accounting systems, identity services,
+								communication platforms, and other third-party systems.
+							</p>
+						</div>
+					</li>
+				</ul>
+			</section>
+
+			<section
+					class="flex items-center gap-8 overflow-hidden rounded-2xl bg-brand-teal/90 pr-8
+				text-white max-md:flex-col max-md:items-start max-md:p-6"
+					aria-label="Schedule a call"
+			>
+				<div class="w-40 shrink-0 self-stretch bg-brand-teal max-md:hidden" aria-hidden="true">
+					<img class="h-full" src="../assets/images/pages/industry/people.png" alt="people" />
+				</div>
+				<p class="flex-1 py-8 text-xl font-medium max-md:py-0">
+					Tell us what you're trying to build, improve or automate. Our team will help you find the right technology approach.
+				</p>
+				<a class="btn shrink-0" href="#">Start Your Project</a>
+			</section>
+
+			<section id="services-we-provide" class="scroll-mt-40">
+				<div class="mx-auto max-w-196 text-center">
+					<span class="eyebrow text-brand-orange">Why businesses choose Kkeydos</span>
+					<h2 class="mt-3">Technology that works around your business<span class="text-brand-orange">.</span></h2>
+					<p class="mt-4 text-brand-muted-gray">
+						Every business has different processes, systems and growth goals. Kkeydos builds flexible software that fits the
+						way you work, integrates with your existing ecosystem and evolves with your business.
+					</p>
+				</div>
+				<ul id="benefits" class="mt-8 grid scroll-mt-40 grid-cols-3 gap-4 max-md:grid-cols-2 max-sm:grid-cols-1">
+					<li class="rounded-xl border border-brand-border p-5">
+						<div class="flex items-start gap-4">
+							<span class="icon-circle icon-orange">
+								<svg aria-hidden="true">
+									<use href="../assets/images/icons.svg#workflow"></use>
+								</svg>
+							</span>
+							<h3 class="text-base">
+								<span class="mb-1 block text-sm font-medium text-brand-orange">01</span>Built Around Your Workflows
+							</h3>
+						</div>
+						<p class="mt-4 text-sm text-brand-muted-gray">
+							We design software around your actual business processes, helping your teams work with less friction and
+							fewer manual steps.
+						</p>
+					</li>
+					<li class="rounded-xl border border-brand-border p-5">
+						<div class="flex items-start gap-4">
+							<span class="icon-circle icon-orange">
+								<svg aria-hidden="true">
+									<use href="../assets/images/icons.svg#network"></use>
+								</svg>
+							</span>
+							<h3 class="text-base">
+								<span class="mb-1 block text-sm font-medium text-brand-orange">02</span>Connect Your Existing Systems
+							</h3>
+						</div>
+						<p class="mt-4 text-sm text-brand-muted-gray">
+							Integrate your ERP, CRM, payment gateways, APIs and third-party platforms into one connected technology
+							ecosystem.
+						</p>
+					</li>
+					<li class="rounded-xl border border-brand-border p-5">
+						<div class="flex items-start gap-4">
+							<span class="icon-circle icon-orange">
+								<svg aria-hidden="true">
+									<use href="../assets/images/icons.svg#settings"></use>
+								</svg>
+							</span>
+							<h3 class="text-base">
+								<span class="mb-1 block text-sm font-medium text-brand-orange">03</span>Automate Repetitive Operations
+							</h3>
+						</div>
+						<p class="mt-4 text-sm text-brand-muted-gray">
+							Reduce manual work with workflow automation, intelligent processes and AI-powered capabilities built into
+							your software.
+						</p>
+					</li>
+					<li class="rounded-xl border border-brand-border p-5">
+						<div class="flex items-start gap-4">
+							<span class="icon-circle icon-orange">
+								<svg aria-hidden="true">
+									<use href="../assets/images/icons.svg#rocket"></use>
+								</svg>
+							</span>
+							<h3 class="text-base">
+								<span class="mb-1 block text-sm font-medium text-brand-orange">04</span>Scale as You Grow
+							</h3>
+						</div>
+						<p class="mt-4 text-sm text-brand-muted-gray">
+							Build on an architecture that can support new users, features, integrations and markets as your business
+							expands.
+						</p>
+					</li>
+					<li class="rounded-xl border border-brand-border p-5">
+						<div class="flex items-start gap-4">
+							<span class="icon-circle icon-orange">
+								<svg aria-hidden="true">
+									<use href="../assets/images/icons.svg#chart-bar"></use>
+								</svg>
+							</span>
+							<h3 class="text-base">
+								<span class="mb-1 block text-sm font-medium text-brand-orange">05</span>Turn Data Into Decisions
+							</h3>
+						</div>
+						<p class="mt-4 text-sm text-brand-muted-gray">
+							Centralize your operational data with dashboards, reporting and analytics that give your teams clearer
+							visibility.
+						</p>
+					</li>
+					<li class="rounded-xl border border-brand-border p-5">
+						<div class="flex items-start gap-4">
+							<span class="icon-circle icon-orange">
+								<svg aria-hidden="true">
+									<use href="../assets/images/icons.svg#cpu"></use>
+								</svg>
+							</span>
+							<h3 class="text-base">
+								<span class="mb-1 block text-sm font-medium text-brand-orange">06</span>Ready for AI
+							</h3>
+						</div>
+						<p class="mt-4 text-sm text-brand-muted-gray">
+							Add AI agents, intelligent automation, recommendations, predictive capabilities or other AI workflows as
+							your needs evolve.
+						</p>
+					</li>
+				</ul>
+			</section>
+
+			<section
+					id="why-choose-kkeydos"
+					class="relative isolate grid scroll-mt-40 grid-cols-5 gap-8 overflow-hidden rounded-2xl
+					 bg-white bg-[url('../images/backgrounds/why-kkeydos.svg')] bg-cover bg-center p-8
+					 max-lg:grid-cols-1 max-sm:p-5"
+			>
+				<div class="col-span-3 flex min-w-0 flex-col items-start max-lg:col-span-1">
+      <span class="eyebrow mb-3 text-brand-orange">
+         Why Kkeydos
+      </span>
+
+					<h2 class="max-w-112">
+						Why businesses choose Kkeydos<span class="text-brand-orange">.</span>
+					</h2>
+
+					<p class="mt-4 max-w-112 text-brand-muted-gray">
+						We combine deep technical expertise with a business-first approach to build software that fits your goals,
+						integrates with your existing systems and scales with your growth.
+					</p>
+
+					<dl class="mt-6 flex flex-wrap gap-x-8 gap-y-4">
+						<div>
+							<dt class="text-2xl font-semibold text-brand-orange">100+</dt>
+							<dd class="text-xs text-brand-muted-gray">Technologies</dd>
+						</div>
+
+						<div>
+							<dt class="text-2xl font-semibold text-brand-orange">4,000+</dt>
+							<dd class="text-xs text-brand-muted-gray">Engineers Network</dd>
+						</div>
+
+						<div>
+							<dt class="text-2xl font-semibold text-brand-orange">Many</dt>
+							<dd class="text-xs text-brand-muted-gray">Industries Served</dd>
+						</div>
+					</dl>
+
+					<a
+							class="btn mt-6"
+							href="mailto:info@keydos.com"
+					>
+						Talk to Our Experts
+					</a>
+
+					<img
+							class="pointer-events-none absolute -bottom-8 -left-8 -z-1 w-[72%] max-w-none select-none max-lg:hidden"
+							src="../assets/images/pages/industries/why-kkeydos-devices.png"
+							alt="Kkeydos dashboard on a laptop and smartphone with a floating integrations panel"
+							width="1536"
+							height="1024"
+							loading="lazy"
+							decoding="async"
+					/>
+				</div>
+
+				<ul class="col-span-2 space-y-4 max-lg:col-span-1">
+					<li class="flex items-start gap-4  rounded-xl border border-brand-border bg-white p-5">
+         <span class="icon-circle icon-orange shrink-0">
+            <svg aria-hidden="true">
+               <use href="../assets/images/icons.svg#chart-bar"></use>
+            </svg>
+         </span>
+
+						<div>
+							<h3 class="text-lg">Industry-Aware Engineering</h3>
+							<p class="mt-2 text-sm text-brand-muted-gray">
+								We understand your business model, operational challenges and compliance needs, and translate them into
+								practical, high-performing software solutions.
+							</p>
+						</div>
+					</li>
+
+					<li class="flex items-start gap-4  rounded-xl border border-brand-border bg-white p-5">
+         <span class="icon-circle icon-orange shrink-0">
+            <svg aria-hidden="true">
+               <use href="../assets/images/icons.svg#stack"></use>
+            </svg>
+         </span>
+
+						<div>
+							<h3 class="text-lg">Bespoke Solutions</h3>
+							<p class="mt-2 text-sm text-brand-muted-gray">
+								Every solution is tailored to your processes, users and goals. We build custom web and mobile applications
+								that solve real business problems and create long-term value.
+							</p>
+						</div>
+					</li>
+
+					<li class="flex items-start gap-4  rounded-xl border border-brand-border bg-white p-5">
+         <span class="icon-circle icon-orange shrink-0">
+            <svg aria-hidden="true">
+               <use href="../assets/images/icons.svg#cpu"></use>
+            </svg>
+         </span>
+
+						<div>
+							<h3 class="text-lg">AI-Ready Architecture</h3>
+							<p class="mt-2 text-sm text-brand-muted-gray">
+								Our solutions are built to leverage AI, automation and advanced analytics, helping you improve efficiency,
+								make smarter decisions and stay ahead of the competition.
+							</p>
+						</div>
+					</li>
+
+					<li class="flex items-start gap-4  rounded-xl border border-brand-border bg-white p-5">
+         <span class="icon-circle icon-orange shrink-0">
+            <svg aria-hidden="true">
+               <use href="../assets/images/icons.svg#team"></use>
+            </svg>
+         </span>
+
+						<div>
+							<h3 class="text-lg">Flexible Engagement</h3>
+							<p class="mt-2 text-sm text-brand-muted-gray">
+								Whether you need an end-to-end development partner or a dedicated team, we offer flexible models that adapt
+								to your timeline, budget and project requirements.
+							</p>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<section
+					class="flex items-center gap-8 overflow-hidden rounded-2xl bg-brand-blue pr-8 text-white max-md:flex-col max-md:items-start max-md:p-6"
+					aria-label="Talk to our team"
+			>
+				<div class="w-40 shrink-0 self-stretch bg-white/10 max-md:hidden" aria-hidden="true">
+					<img class="h-full" src="../assets/images/pages/industry/people.png" alt="people" />
+				</div>
+				<p class="flex-1 py-8 text-xl font-medium max-md:py-0">
+					Team up with an award-winning software development company. Trusted by 500+ clients worldwide.
+				</p>
+				<a class="btn shrink-0" href="mailto:info@keydos.com">Schedule a Call</a>
+			</section>
+
+			<section
+					id="technologies"
+					class="grid scroll-mt-40 grid-cols-2 items-center gap-10 rounded-2xl bg-brand-light p-8 max-lg:grid-cols-1 max-sm:p-5"
+			>
+				<div>
+					<h2>AI-augmented engineers across 100+ technologies<span class="text-brand-orange">.</span></h2>
+					<p class="mt-6 text-brand-muted-gray">
+						We have 4,000+ software engineers with expertise in over 100 technologies, including the modern AI coding tools
+						that let them ship faster in your preferred stack.
+					</p>
+					<a
+							class="sliding-btn text-brand-orange border-b-brand-orange mt-6 w-54"
+							href="#"
+					>
+                <span>
+Our full repertoire
+                  <svg class="size-4 shrink-0" aria-hidden="true">
+                    <use href="../assets/images/icons.svg#arrow-right"></use>
+                  </svg>
+                </span>
+					</a>
+				</div>
+				<ul class="grid grid-cols-2 gap-px overflow-hidden rounded-xl bg-brand-border">
+					<li class="group bg-brand-light p-5 text-center">
+						<svg class="mx-auto mb-3 size-16 text-brand-gray transition-colors group-hover:text-red-500" aria-hidden="true"><use href="../assets/images/icons.svg#laravel"></use></svg>
+						<span class="font-medium">Laravel</span>
+					</li>
+					<li class="group bg-brand-light p-5 text-center">
+						<svg class="mx-auto mb-3 size-16 text-brand-gray transition-colors group-hover:text-green-600" aria-hidden="true"><use href="../assets/images/icons.svg#nodejs"></use></svg>
+						<span class="font-medium">Node.js</span>
+					</li>
+					<li class="group bg-brand-light p-5 text-center">
+						<svg class="mx-auto mb-3 size-16 text-brand-gray transition-colors group-hover:text-cyan-400" aria-hidden="true"><use href="../assets/images/icons.svg#react"></use></svg>
+						<span class="font-medium">React</span>
+					</li>
+					<li class="group bg-brand-light p-5 text-center">
+						<svg class="mx-auto mb-3 size-16 text-brand-gray transition-colors group-hover:text-primary" aria-hidden="true"><use href="../assets/images/icons.svg#nextjs"></use></svg>
+						<span class="font-medium">Next.js</span>
+					</li>
+					<li class="group bg-brand-light p-5 text-center">
+						<img class="mx-auto mb-3 size-16 object-contain grayscale transition-[filter] group-hover:grayscale-0" src="../assets/images/brands/mysql.svg" alt="" width="64" height="64" loading="lazy" />
+						<span class="font-medium">MySQL</span>
+					</li>
+					<li class="group bg-brand-light p-5 text-center">
+						<img class="mx-auto mb-3 size-16 object-contain grayscale transition-[filter] group-hover:grayscale-0" src="../assets/images/brands/aws.svg" alt="" width="64" height="64" loading="lazy" />
+						<span class="font-medium">AWS</span>
+					</li>
+				</ul>
+			</section>
+
+			<section id="faq-section" class="scroll-mt-40" data-accordions="one-active">
+				<h2 class="mb-10">Frequently Asked Questions (FAQ)<span class="text-brand-orange">.</span></h2>
+				<div class="faq-item" data-accordion data-open="true">
+					<button class="faq-item__button text-left" type="button" data-accordion-trigger aria-expanded="true" aria-controls="faq-answer-1">
+						What is FinTech software development?
+						<svg aria-hidden="true"><use href="../assets/images/icons.svg#chevron-bottom"></use></svg>
+					</button>
+					<div id="faq-answer-1" data-accordion-content>
+						<div>
+							<p class="pb-6 text-brand-gray">
+								FinTech software development involves building digital solutions for financial services, including payment
+								platforms, lending systems, financial dashboards, customer portals, and automated financial workflows.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="faq-item" data-accordion>
+					<button class="faq-item__button text-left" type="button" data-accordion-trigger aria-expanded="false" aria-controls="faq-answer-2">
+						What types of FinTech solutions does Kkeydos build?
+						<svg aria-hidden="true"><use href="../assets/images/icons.svg#chevron-bottom"></use></svg>
+					</button>
+					<div id="faq-answer-2" data-accordion-content>
+						<div>
+							<p class="pb-6 text-brand-gray">
+								Kkeydos develops custom payment solutions, FinTech platforms, lending and loan management systems, financial
+								dashboards, CRM platforms, workflow automation, and AI-powered financial applications.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="faq-item" data-accordion>
+					<button class="faq-item__button text-left" type="button" data-accordion-trigger aria-expanded="false" aria-controls="faq-answer-3">
+						Can Kkeydos integrate payment gateways and financial APIs?
+						<svg aria-hidden="true"><use href="../assets/images/icons.svg#chevron-bottom"></use></svg>
+					</button>
+					<div id="faq-answer-3" data-accordion-content>
+						<div>
+							<p class="pb-6 text-brand-gray">
+								Yes. Kkeydos can integrate payment gateways, banking APIs, accounting platforms, third-party services, and
+								other APIs required to connect your FinTech application with existing systems.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="faq-item" data-accordion>
+					<button class="faq-item__button text-left" type="button" data-accordion-trigger aria-expanded="false" aria-controls="faq-answer-4">
+						Can you build a custom FinTech application from scratch?
+						<svg aria-hidden="true"><use href="../assets/images/icons.svg#chevron-bottom"></use></svg>
+					</button>
+					<div id="faq-answer-4" data-accordion-content>
+						<div>
+							<p class="pb-6 text-brand-gray">
+								Yes. We can take a FinTech product from requirements and UI/UX design through development, API integration,
+								testing, deployment, and ongoing improvements.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="faq-item" data-accordion>
+					<button class="faq-item__button text-left" type="button" data-accordion-trigger aria-expanded="false" aria-controls="faq-answer-5">
+						How can AI and automation be used in FinTech?
+						<svg aria-hidden="true"><use href="../assets/images/icons.svg#chevron-bottom"></use></svg>
+					</button>
+					<div id="faq-answer-5" data-accordion-content>
+						<div>
+							<p class="pb-6 text-brand-gray">
+								AI and automation can be used for document processing, customer support, workflow automation, data analysis,
+								recommendations, notifications, and other repetitive financial processes.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="faq-item" data-accordion>
+					<button class="faq-item__button text-left" type="button" data-accordion-trigger aria-expanded="false" aria-controls="faq-answer-6">
+						How long does it take to develop a FinTech solution?
+						<svg aria-hidden="true"><use href="../assets/images/icons.svg#chevron-bottom"></use></svg>
+					</button>
+					<div id="faq-answer-6" data-accordion-content>
+						<div>
+							<p class="pb-6 text-brand-gray">
+								The timeline depends on the product's scope, integrations, features, security requirements, and complexity.
+								After understanding the requirements, Kkeydos can provide a project-specific development plan and timeline.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
-		<aside class="mt-10 w-56 shrink-0 max-xl:mt-0 max-xl:w-full" data-fixed>
+		<aside class="mt-10 w-56 shrink-0 max-xl:order-first max-xl:mt-0 max-xl:w-full" data-fixed>
 			<div
-					class="group top-20 z-20 w-56 bg-white py-4 data-[fixed=true]:fixed
+					class="group top-20 z-20 w-56  py-4 data-[fixed=true]:fixed
 					max-xl:inset-x-0 max-xl:w-full max-xl:px-5 max-xl:data-[fixed=true]:shadow-default"
 					data-fixed-content
 					data-open="false"
 			>
 				<span class="eyebrow mb-4 group-data-[fixed=true]:hidden max-xl:hidden">Navigate</span>
-				<nav class="flex flex-col max-xl:flex-row max-xl:items-center max-xl:gap-4 max-lg:flex-col max-lg:items-start" aria-label="Table of contents">
+				<nav class="industry-toc flex bg-white flex-col max-xl:flex-row max-xl:items-center max-xl:gap-4 max-lg:flex-col max-lg:items-start" aria-label="Table of contents">
 					<button
 							class="btn-black group hidden w-full justify-between group-data-[fixed=true]:inline-flex max-xl:inline-flex max-xl:w-auto max-xl:shrink-0 max-xl:justify-start"
 							type="button"
@@ -1802,17 +2227,62 @@
 					 max-xl:group-data-[open=false]:hidden">
 						<ul class="overflow-hidden max-xl:flex max-xl:flex-wrap max-lg:h-8 max-lg:flex-nowrap max-lg:overflow-x-auto">
 							<li>
-								<a class="block border-l border-primary p-2 max-xl:rounded-xl max-xl:border-0 max-xl:px-3 max-xl:py-2 max-xl:text-xs max-xl:whitespace-nowrap max-xl:text-brand-slate max-xl:transition-colors max-xl:hover:bg-brand-gray-alt" href="#">
+								<a class="block border-l border-brand-border p-2 hover:text-brand-orange max-xl:border-0 max-xl:text-xs max-xl:whitespace-nowrap" href="#fintech-services">FinTech development services we provide</a>
+							</li>
+							<li>
+								<a class="block border-l border-brand-border p-2 hover:text-brand-orange max-xl:rounded-xl max-xl:border-0 max-xl:px-3 max-xl:py-2 max-xl:text-xs max-xl:whitespace-nowrap max-xl:hover:bg-brand-gray-alt" href="#services-we-provide">
 									Technology that works around your business
 								</a>
+							</li>
+							<li>
+								<a class="block border-l border-brand-border p-2 hover:text-brand-orange max-xl:border-0 max-xl:text-xs max-xl:whitespace-nowrap" href="#benefits">Benefits of building bespoke solutions</a>
+							</li>
+							<li>
+								<a class="block border-l border-brand-border p-2 hover:text-brand-orange max-xl:border-0 max-xl:text-xs max-xl:whitespace-nowrap" href="#why-choose-kkeydos">Why businesses choose Kkeydos</a>
+							</li>
+							<li>
+								<a class="block border-l border-brand-border p-2 hover:text-brand-orange max-xl:border-0 max-xl:text-xs max-xl:whitespace-nowrap" href="#technologies">Technologies we work with</a>
+							</li>
+							<li>
+								<a class="block border-l border-brand-border p-2 hover:text-brand-orange max-xl:border-0 max-xl:text-xs max-xl:whitespace-nowrap" href="#faq-section">Frequently Asked Questions (FAQ)</a>
 							</li>
 						</ul>
 					</div>
 				</nav>
-				<a class="btn mt-3 w-full max-xl:hidden" href="#">WHAT YOU SAY</a>
+				<a class="btn mt-3 w-full max-xl:hidden" href="mailto:info@keydos.com">WHAT YOU SAY</a>
 			</div>
 		</aside>
 	</div>
+
+	<section class="section-margin black-section text-white" data-cta-glow  >
+		<div class="page-container grid grid-cols-2 items-center gap-12 max-lg:grid-cols-1 max-lg:py-10">
+			<div
+					class="py-16 max-lg:order-1 max-lg:mx-auto max-lg:max-w-140 max-lg:py-0 max-lg:text-center"
+			>
+				<h2>
+					Creating custom solutions shouldn’t be complicated.
+
+					<span class="text-brand-orange block"
+					>Outsource the heavy lifting to us.
+</span
+>
+				</h2>
+				<a href="#" class="btn mt-8">Start Your Project</a>
+			</div>
+			<div>
+				<img
+						src="../assets/images/pages/industry/fintech-team.webp"
+						alt="FinTech team reviewing a financial dashboard"
+						width="1536"
+						height="1024"
+						loading="lazy"
+						decoding="async"
+						class="size-full  object-contain max-lg:mx-auto max-lg:max-w-140 max-lg:translate-y-0"
+				/>
+			</div>
+		</div>
+	</section>
+
 </main>
 
 <footer class="overflow-hidden">
