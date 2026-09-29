@@ -9,7 +9,7 @@ if (header && menuButton) {
   const closeMenu = () => {
     header.dataset.open = 'false';
     menuButton.setAttribute('aria-expanded', 'false');
-    document.body.classList.remove('h-screen');
+    document.body.classList.remove('overflow-hidden');
   };
 
   menuButton.addEventListener('click', () => {
@@ -17,7 +17,7 @@ if (header && menuButton) {
 
     header.dataset.open = String(open);
     menuButton.setAttribute('aria-expanded', String(open));
-    document.body.classList.toggle('h-screen', open);
+    document.body.classList.toggle('overflow-hidden', open);
   });
 
   const desktopMedia = window.matchMedia('(min-width: 1280px)');
