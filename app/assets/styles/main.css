@@ -1384,12 +1384,6 @@
       background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
     }
   }
-  .bg-white\/80 {
-    background-color: color-mix(in srgb, #fff 80%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-white) 80%, transparent);
-    }
-  }
   .bg-white\/85 {
     background-color: color-mix(in srgb, #fff 85%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -3171,20 +3165,11 @@
     }
   }
   @media (width < 40rem) {
-    .max-sm\:absolute {
-      position: absolute;
-    }
-    .max-sm\:top-0 {
-      top: 0px;
-    }
     .max-sm\:top-5\.5 {
       top: calc(var(--spacing) * 5.5);
     }
     .max-sm\:bottom-5\.5 {
       bottom: calc(var(--spacing) * 5.5);
-    }
-    .max-sm\:left-0 {
-      left: 0px;
     }
     .max-sm\:left-5\.5 {
       left: calc(var(--spacing) * 5.5);
@@ -3192,14 +3177,21 @@
     .max-sm\:col-span-2 {
       grid-column: span 2 / span 2;
     }
-    .max-sm\:mb-0 {
-      margin-bottom: 0px;
+    .max-sm\:mb-2 {
+      margin-bottom: calc(var(--spacing) * 2);
     }
     .max-sm\:mb-4 {
       margin-bottom: calc(var(--spacing) * 4);
     }
     .max-sm\:hidden {
       display: none;
+    }
+    .max-sm\:size-8 {
+      width: calc(var(--spacing) * 8);
+      height: calc(var(--spacing) * 8);
+    }
+    .max-sm\:min-h-8 {
+      min-height: calc(var(--spacing) * 8);
     }
     .max-sm\:w-7 {
       width: calc(var(--spacing) * 7);
@@ -3243,20 +3235,16 @@
     .max-sm\:py-10 {
       padding-block: calc(var(--spacing) * 10);
     }
-    .max-sm\:pl-12 {
-      padding-left: calc(var(--spacing) * 12);
-    }
     .max-sm\:text-base {
       font-size: var(--text-base);
       line-height: var(--tw-leading, var(--text-base--line-height));
     }
-    .max-sm\:text-sm {
-      font-size: var(--text-sm);
-      line-height: var(--tw-leading, var(--text-sm--line-height));
-    }
     .max-sm\:text-xs {
       font-size: var(--text-xs);
       line-height: var(--tw-leading, var(--text-xs--line-height));
+    }
+    .max-sm\:text-\[11px\] {
+      font-size: 11px;
     }
   }
   @media (width < 32.5rem) {
