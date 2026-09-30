@@ -34,9 +34,15 @@
   --shadow-hover: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
 
+
+@utility text-ten {
+  font-size: 10px;
+}
+
+
 @layer base {
   body {
-    @apply font-outfit text-primary bg-bg flex min-h-screen flex-col;
+    @apply font-outfit text-primary bg-bg flex min-h-screen flex-col scroll-smooth;
   }
 
   main {
