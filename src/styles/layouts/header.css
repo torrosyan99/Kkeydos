@@ -20,9 +20,6 @@
       @apply text-brand-teal;
     }
 
-    &:hover .header-link svg {
-      @apply rotate-180;
-    }
 
     &:hover .header-link::after {
       @apply scale-x-100;
