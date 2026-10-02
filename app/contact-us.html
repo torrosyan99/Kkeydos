@@ -28,7 +28,6 @@
 	<link href="assets/libs/swiper/swiper.min.css" rel="stylesheet" type="text/css"/>
 	<link href="assets/styles/main.css" rel="stylesheet" type="text/css"/>
 
-	<script src="assets/scripts/pages/about.js" type="module" defer></script>
 	<script src="assets/scripts/main.js" type="module" defer></script>
 </head>
 <body>
@@ -1169,604 +1168,886 @@
 	</div>
 </header>
 
-<main class="about-page">
-	<section class="pt-10 max-md:pt-6">
-		<div class="page-container">
-			<nav aria-label="Breadcrumb" class="flex items-center gap-3 py-4 text-sm">
-				<a href="/" aria-label="Home">
-					<svg class="size-5" aria-hidden="true">
-						<use href="assets/images/icons.svg#breadcrumbs-home"></use>
-					</svg>
-				</a>
-				<svg class="size-3" aria-hidden="true">
-					<use href="assets/images/icons.svg#chevron-right"></use>
-				</svg>
-				<span class="font-semibold">About</span>
-			</nav>
-			<div class="max-w-237.5 mt-12 max-md:mt-8">
-				<p class="eyebrow">About KKEYDOS</p>
-				<h2 class='mt-4'>
-					We partner with businesses to build powerful digital products that simplify challenges,
-					unlock opportunities, and accelerate growth.
-					<span
-							class="text-brand-orange mt-6 block w-fit max-w-full pr-24"
-							data-about-intro
-					>
-					We make technology work for business.
-				  </span>
-				</h2>
-			</div>
-			<div class="relative h-60 max-md:h-40" aria-hidden="true" data-intro-path>
-				<svg class="absolute inset-0 size-full overflow-visible" fill="none">
-					<path
-							class="stroke-brand-orange"
-							stroke-width="12"
-							stroke-linecap="round"
-							data-intro-curve=""
-					></path>
-				</svg
-				>
-				<span
-						class="bg-brand-orange absolute top-0 left-0 size-8 rounded-full"
-						data-intro-ball
-				>
-
-			</span
-			><span
-					class="bg-brand-orange absolute top-0 left-0 size-8 rounded-full opacity-40"
-					data-intro-trail
-			></span
-			><span
-					class="bg-brand-orange absolute top-0 left-0 size-8 rounded-full opacity-30"
-					data-intro-trail
-			></span
-			><span
-					class="bg-brand-orange absolute top-0 left-0 size-8 rounded-full opacity-20"
-					data-intro-trail
-			></span>
-			</div>
-		</div>
-	</section>
-	<div class="pointer-events-none absolute w-3" aria-hidden="true" data-story-track>
+<main>
+	<section class="relative bg-brand-light pt-2 max-md:pt-12 max-md:pb-10">
 		<div
-				class="bg-brand-orange absolute top-0 left-0 w-full origin-top"
-				data-story-line
-		></div>
-		<span
-				class="bg-brand-orange absolute top-0 -left-2.5 size-8 rounded-full"
-				data-story-ball
-				hidden
-		></span>
-	</div>
-
-	<section class="pb-100 max-xl:pb-75 max-md:pb-36" data-story-step="intro">
-		<div class="page-container relative pl-19 max-md:pl-17">
-                 <span
-		                 data-story-stop
-		                 class="ring-brand-orange/15 bg-brand-orange
-		                 absolute top-1 left-5 size-8 rounded-full ring-8 transition"
-		                 aria-hidden="true"
-                 ></span>
-			<div class="grid grid-cols-2 items-start gap-16 max-lg:grid-cols-1 max-md:gap-8">
-				<div data-about-reveal>
-					<span class="eyebrow">Our Story</span>
-					<h2 class="font-medium mt-4">
-						From a small team with a big idea to a technology partner for growing businesses.
-					</h2>
-					<p class="text-brand-gray mt-5 text-xl max-md:text-lg">
-						Founded in Hyderabad in 2018, KKEYDOS began by helping businesses turn their ideas
-						into digital products. Today, we build and scale web, mobile, SaaS, AI, eCommerce,
-						CRM, and enterprise solutions for clients across India and international markets.
-					</p>
-					<p class="mt-12 text-3xl font-medium max-md:mt-8 max-md:text-2xl">
-						We started with a vision.<br /><span class="text-brand-orange"
-					>Today, we’re building what comes next.</span
-					>
-					</p>
-				</div>
-				<img
-						class="aspect-square w-full rounded-xl object-cover object-left"
-						src="assets/images/team-flow/services-team.webp"
-						alt="Software developers working together on a project"
-						loading="lazy"
-						decoding="async"
-						width="1942"
-						height="809"
-						data-about-reveal="right"
-				/>
-			</div>
-		</div>
-	</section>
-
-	<section class="relative  pb-100 max-xl:pb-75 max-md:pb-36" data-story-step>
-		<div class="page-container relative pl-19 max-md:pl-17">
-            <span
-		            data-story-stop
-		            class="ring-brand-orange/15 bg-brand-orange absolute top-1 left-5
-		            size-8 rounded-full ring-8 transition"
-		            aria-hidden="true"
-            ></span>
-			<p
-					class="w-fit pb-60 text-8xl font-medium whitespace-nowrap max-xl:pb-40 max-xl:text-7xl max-md:text-6xl max-sm:text-5xl"
-					data-about-since=""
-			>
-				Since then...
-			</p>
-		</div>
-	</section>
-
-	<section class="relative pb-100 max-xl:pb-75 max-md:pb-36" data-story-step="">
-		<div class="page-container relative pl-19 max-md:pl-17">
-            <span
-		            data-story-stop
-		            class="ring-brand-orange/15 bg-brand-orange absolute top-1 left-5 size-8
-		            rounded-full ring-8 transition"
-		            aria-hidden="true"
-            ></span>
-			<div
-					class="-mt-4 flex items-start gap-10 pb-25 max-xl:gap-4 max-md:flex-col-reverse max-md:pb-12"
-			>
-				<div class="min-w-0 flex-[2] max-md:w-full max-md:flex-none">
-					<h2 class="font-medium">
-						We’ve delivered
-						<strong class="text-brand-orange font-medium">280+</strong> digital products for
-						<strong class="text-brand-orange font-medium">177</strong> clients worldwide.
-					</h2>
-					<p class="text-brand-gray mt-5 text-xl max-md:text-lg">
-						From startups to established businesses, our work has helped companies turn ideas
-						into working digital products and build technology that supports their growth.
-					</p>
-				</div>
-				<div
-						class="relative h-120 min-w-0 flex-[3] -translate-y-1/4 overflow-hidden rounded-xl max-xl:flex-[2] max-lg:h-90 max-md:w-full max-md:flex-none max-md:translate-y-0 max-sm:h-40"
-						data-projects-photo
-				>
-					<img
-							class="absolute inset-y-0 left-0 h-full w-auto max-w-none min-w-[140%] object-cover"
-							src="assets/images/pages/about/software-projects-panorama.webp"
-							alt="Web and mobile application development with code, interface designs, and a working app"
-							loading="lazy"
-							decoding="async"
-							width="2172"
-							height="724"
-					/>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section
-			class="relative mb-40 max-xl:mb-32 max-md:mb-20"
-			data-story-step
-			data-map-scene
-	>
-		<div class="page-container relative pl-19 max-md:pl-17" data-map-pin>
-			<div
-					class="pointer-events-none absolute w-3"
-					data-map-timeline
-					aria-hidden="true"
-					hidden
-			>
-				<div class="bg-brand-orange absolute inset-0"></div>
-				<span class="bg-brand-orange absolute -bottom-4 -left-2.5 size-8 rounded-full"></span>
-			</div>
-			<span
-					data-story-stop
-					class="ring-brand-orange/15 bg-brand-orange absolute top-1 left-5 size-8
-						 rounded-full ring-8 transition"
-					aria-hidden="true"
-			></span>
-			<div class="flex items-center gap-12 max-lg:flex-col max-lg:items-stretch max-md:gap-8">
-				<div class="w-96 shrink-0 max-xl:w-80 max-lg:w-full">
-					<div>
-						<h2 class="mb-6 font-medium">Our Global Footprint</h2>
-						<p class="text-brand-gray mb-8 text-xl max-md:text-base">
-							From our headquarters in Hyderabad, India, we work with clients and partners
-							around the world.
-						</p>
-						<div class="border-brand-orange mb-8 border-l-2 pl-4">
-							<p class="text-brand-gray mb-1 text-sm">Headquarters</p>
-							<p class="text-xl font-semibold">Hyderabad, India</p>
-						</div>
-					</div>
-					<div>
-						<h3 class="mb-4 font-semibold">Clients &amp; partnerships</h3>
-						<ul class="text-brand-gray grid grid-cols-2 gap-x-4 gap-y-3 text-base">
-							<li class="flex items-center gap-2">
-                      <span
-		                      class="bg-brand-teal size-1.5 shrink-0 rounded-full"
-		                      aria-hidden="true"
-                      ></span
-                      >USA
-							</li>
-							<li class="flex items-center gap-2">
-                      <span
-		                      class="bg-brand-teal size-1.5 shrink-0 rounded-full"
-		                      aria-hidden="true"
-                      ></span
-                      >Canada
-							</li>
-							<li class="flex items-center gap-2">
-                      <span
-		                      class="bg-brand-teal size-1.5 shrink-0 rounded-full"
-		                      aria-hidden="true"
-                      ></span
-                      >Germany
-							</li>
-							<li class="flex items-center gap-2">
-                      <span
-		                      class="bg-brand-teal size-1.5 shrink-0 rounded-full"
-		                      aria-hidden="true"
-                      ></span
-                      >Denmark
-							</li>
-							<li class="flex items-center gap-2">
-                      <span
-		                      class="bg-brand-teal size-1.5 shrink-0 rounded-full"
-		                      aria-hidden="true"
-                      ></span
-                      >Netherlands
-							</li>
-							<li class="flex items-center gap-2">
-                      <span
-		                      class="bg-brand-teal size-1.5 shrink-0 rounded-full"
-		                      aria-hidden="true"
-                      ></span
-                      >Qatar
-							</li>
-							<li class="flex items-center gap-2">
-                      <span
-		                      class="bg-brand-teal size-1.5 shrink-0 rounded-full"
-		                      aria-hidden="true"
-                      ></span
-                      >Dubai, UAE
-							</li>
-							<li class="flex items-center gap-2">
-                      <span
-		                      class="bg-brand-teal size-1.5 shrink-0 rounded-full"
-		                      aria-hidden="true"
-                      ></span
-                      >Singapore
-							</li>
-							<li class="flex items-center gap-2">
-                      <span
-		                      class="bg-brand-teal size-1.5 shrink-0 rounded-full"
-		                      aria-hidden="true"
-                      ></span
-                      >Philippines
-							</li>
-							<li class="flex items-center gap-2">
-                      <span
-		                      class="bg-brand-teal size-1.5 shrink-0 rounded-full"
-		                      aria-hidden="true"
-                      ></span
-                      >South Africa
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="w-full min-w-0 flex-1" data-map-reveal>
-					<figure
-							class="bg-brand-light-alt border-brand-border origin-center
-								overflow-hidden rounded-2xl border p-6 max-md:p-2"
-							data-map-card
-					>
-						<img
-								class="h-auto w-full"
-								src="assets/images/pages/about/global-footprint-india.svg"
-								alt="World map connecting Hyderabad, India headquarters with our international clients and partners."
-								width="1200"
-								height="520"
-								loading="lazy"
-								decoding="async"
-						/>
-						<figcaption class="text-brand-gray px-2 pt-3 pb-2 text-sm">
-							Global presence through clients and partnerships.
-						</figcaption>
-					</figure>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<div data-map-exit-gap="" aria-hidden="true"></div>
-	<div class="bg-primary" data-map-following="">
-		<section
-				class="about-giveback bg-primary relative isolate overflow-hidden pb-96
-				text-white max-xl:pb-60 max-lg:[clip-path:none] max-md:pb-24"
-				data-about-giveback
+				class="page-container flex items-center justify-between gap-10 max-md:flex-col max-md:items-start max-md:gap-5"
 		>
 			<div
-					class="bg-brand-teal pointer-events-none absolute inset-0 -z-1"
-					data-giveback-wash
-			></div>
-			<div class="page-container relative pt-40 max-xl:pt-20" data-giveback-track="">
-				<div class="pointer-events-none absolute top-0 left-7.5 w-3" aria-hidden="true">
-					<div class="absolute top-0 left-0 w-full bg-white" data-giveback-line=""></div>
-					<span
-							class="absolute top-0 -left-2.5 size-8 rounded-full bg-white"
-							data-giveback-ball=""
-							hidden
-					></span>
-				</div>
-
-				<div
-						class="relative flex items-center gap-12 pb-24 pl-14
-						max-lg:flex-col max-md:gap-8 max-md:pb-20 max-md:pl-12"
-				>
-              <span
-		              class="absolute top-1 left-0 size-8 rounded-full bg-white ring-8 ring-white/15
-		              transition-opacity  data-[reached=false]:opacity-0"
-		              data-giveback-stop=""
-		              aria-hidden="true"
-              ></span>
-					<div data-about-reveal="" class="min-w-0 flex-1 max-lg:w-full max-lg:flex-none">
-						<h2 class="mb-4 font-medium">WE’RE BUILDING WHAT’S NEXT</h2>
-						<p class="mb-5 text-2xl font-semibold max-md:text-xl">
-							Technology should create opportunities, not just solutions.
-						</p>
-						<p class="mb-10 text-xl max-md:text-base">
-							At KKEYDOS, we believe great technology can help businesses move faster, work
-							smarter, and create new possibilities. As we continue to grow, our focus is on
-							building meaningful digital products, developing long-term partnerships, and
-							creating technology that delivers real business value.
-						</p>
-						<p class="text-xl font-semibold max-md:text-lg">
-							Building today for what businesses need tomorrow
-						</p>
-					</div>
-					<img
-							class="h-auto w-1/2 min-w-0 flex-1 rounded-2xl object-cover max-lg:w-full max-lg:flex-none"
-							src="assets/images/pages/about/coding-mentorship.webp"
-							alt="A software development mentor helping aspiring developers build a web application"
-							loading="lazy"
-							decoding="async"
-							width="1536"
-							height="1024"
-							data-about-reveal=""
-					/>
-				</div>
-				<div class="relative pb-4 pl-14 max-md:pl-12">
-					<h2 class="mb-10 w-full max-w-200 font-semibold">Let’s build<br />what’s next.</h2>
-					<div class="flex flex-wrap items-center gap-6">
-						<a class="btn" href="#">Start Your Project</a>
-						<a
-								class="arrow-btn text-brand-orange"
-								href="mailto:info@keydos.com?subject=Careers%20at%20KKEYDOS"
-						>Explore Careers<svg
-								viewBox="0 0 24 24"
-								fill="none"
-								stroke="currentColor"
-								stroke-width="2"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								aria-hidden="true"
-						>
-							<path d="M5 12h14" />
-							<path d="m12 5 7 7-7 7" /></svg
-						></a>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
-	<section class="bg-primary  section-padding  pb-section-desktop max-lg:pb-section-tablet max-md:pb-section-mobile text-white">
-		<div class="page-container">
-			<h2 class="mb-16 font-medium max-lg:mb-4">How KKEYDOS grew over the years</h2>
-			<div
-					class="about-history flex w-full gap-8 overflow-x-auto p-4 pb-20
-					max-lg:gap-6  max-md:gap-4 max-md:pb-10"
-					role="region"
-					aria-label="Company history, 2018 to 2026"
-					tabindex="0"
-					data-about-history=""
+					class="flex-1"
 			>
-				<article class="group shrink-0 grow basis-64 md:basis-80 xl:basis-1/4">
-					<div class="relative my-4 flex h-px items-center" aria-hidden="true">
-						<div
-								class="from-brand-orange to-primary absolute inset-x-0 h-px bg-linear-to-r"
-						></div>
-						<span
-								class="bg-brand-orange ring-brand-orange/20 absolute top-1/2 left-0 size-7 -translate-y-1/2 rounded-full ring-8 group-hover:ring-0"
-						></span>
-						<span
-								class="bg-brand-orange absolute top-1/2 left-0 size-7 -translate-y-1/2 rounded-full group-hover:animate-ping"
-						></span>
-					</div>
-					<h3 class="group-hover:text-brand-orange mt-8 mb-4 transition-colors">2018</h3>
-					<h4 class="mb-3 font-semibold">The Beginning</h4>
-					<p class="text-brand-light">
-						KKEYDOS was founded in Hyderabad with a simple vision: help businesses turn their
-						ideas into practical digital solutions.
-					</p>
-				</article>
-				<article class="group shrink-0 grow basis-64 md:basis-80 xl:basis-1/4">
-					<div class="relative my-4 flex h-px items-center" aria-hidden="true">
-						<div
-								class="from-brand-orange to-primary absolute inset-x-0 h-px bg-linear-to-r"
-						></div>
-						<span
-								class="bg-brand-orange ring-brand-orange/20 absolute top-1/2 left-0 size-7 -translate-y-1/2 rounded-full ring-8 group-hover:ring-0"
-						></span>
-						<span
-								class="bg-brand-orange absolute top-1/2 left-0 size-7 -translate-y-1/2 rounded-full group-hover:animate-ping"
-						></span>
-					</div>
-					<h3 class="group-hover:text-brand-orange mt-8 mb-4 transition-colors">2019</h3>
-					<h4 class="mb-3 font-semibold">Building Our Foundation</h4>
-					<p class="text-brand-light">
-						We focused on building our development capabilities and delivering our first
-						generation of websites, applications, and business software.
-					</p>
-				</article>
-				<article class="group shrink-0 grow basis-64 md:basis-80 xl:basis-1/4">
-					<div class="relative my-4 flex h-px items-center" aria-hidden="true">
-						<div
-								class="from-brand-orange to-primary absolute inset-x-0 h-px bg-linear-to-r"
-						></div>
-						<span
-								class="bg-brand-orange ring-brand-orange/20 absolute top-1/2 left-0 size-7 -translate-y-1/2 rounded-full ring-8 group-hover:ring-0"
-						></span>
-						<span
-								class="bg-brand-orange absolute top-1/2 left-0 size-7 -translate-y-1/2 rounded-full group-hover:animate-ping"
-						></span>
-					</div>
-					<h3 class="group-hover:text-brand-orange mt-8 mb-4 transition-colors">2020</h3>
-					<h4 class="mb-3 font-semibold">Expanding Our Capabilities</h4>
-					<p class="text-brand-light">
-						KKEYDOS expanded its technology capabilities and began working on more complex
-						digital products for businesses across different industries.
-					</p>
-				</article>
-				<article class="group shrink-0 grow basis-64 md:basis-80 xl:basis-1/4">
-					<div class="relative my-4 flex h-px items-center" aria-hidden="true">
-						<div
-								class="from-brand-orange to-primary absolute inset-x-0 h-px bg-linear-to-r"
-						></div>
-						<span
-								class="bg-brand-orange ring-brand-orange/20 absolute top-1/2 left-0 size-7 -translate-y-1/2 rounded-full ring-8 group-hover:ring-0"
-						></span>
-						<span
-								class="bg-brand-orange absolute top-1/2 left-0 size-7 -translate-y-1/2 rounded-full group-hover:animate-ping"
-						></span>
-					</div>
-					<h3 class="group-hover:text-brand-orange mt-8 mb-4 transition-colors">2021</h3>
-					<h4 class="mb-3 font-semibold">Growing Beyond Projects</h4>
-					<p class="text-brand-light">
-						We moved beyond individual development projects and started taking on larger, more
-						structured digital transformation requirements.
-					</p>
-				</article>
-				<article class="group shrink-0 grow basis-64 md:basis-80 xl:basis-1/4">
-					<div class="relative my-4 flex h-px items-center" aria-hidden="true">
-						<div
-								class="from-brand-orange to-primary absolute inset-x-0 h-px bg-linear-to-r"
-						></div>
-						<span
-								class="bg-brand-orange ring-brand-orange/20 absolute top-1/2 left-0 size-7 -translate-y-1/2 rounded-full ring-8 group-hover:ring-0"
-						></span>
-						<span
-								class="bg-brand-orange absolute top-1/2 left-0 size-7 -translate-y-1/2 rounded-full group-hover:animate-ping"
-						></span>
-					</div>
-					<h3 class="group-hover:text-brand-orange mt-8 mb-4 transition-colors">2022</h3>
-					<h4 class="mb-3 font-semibold">Reaching Global Markets</h4>
-					<p class="text-brand-light">
-						Our work expanded to international clients, strengthening KKEYDOS as a technology
-						partner for businesses beyond India.
-					</p>
-				</article>
-				<article class="group shrink-0 grow basis-64 md:basis-80 xl:basis-1/4">
-					<div class="relative my-4 flex h-px items-center" aria-hidden="true">
-						<div
-								class="from-brand-orange to-primary absolute inset-x-0 h-px bg-linear-to-r"
-						></div>
-						<span
-								class="bg-brand-orange ring-brand-orange/20 absolute top-1/2 left-0 size-7 -translate-y-1/2 rounded-full ring-8 group-hover:ring-0"
-						></span>
-						<span
-								class="bg-brand-orange absolute top-1/2 left-0 size-7 -translate-y-1/2 rounded-full group-hover:animate-ping"
-						></span>
-					</div>
-					<h3 class="group-hover:text-brand-orange mt-8 mb-4 transition-colors">2023</h3>
-					<h4 class="mb-3 font-semibold">Scaling Digital Products</h4>
-					<p class="text-brand-light">
-						We delivered an increasing range of digital products and strengthened our
-						capabilities across business applications and scalable platforms.
-					</p>
-				</article>
-				<article class="group shrink-0 grow basis-64 md:basis-80 xl:basis-1/4">
-					<div class="relative my-4 flex h-px items-center" aria-hidden="true">
-						<div
-								class="from-brand-orange to-primary absolute inset-x-0 h-px bg-linear-to-r"
-						></div>
-						<span
-								class="bg-brand-orange ring-brand-orange/20 absolute top-1/2 left-0 size-7 -translate-y-1/2 rounded-full ring-8 group-hover:ring-0"
-						></span>
-						<span
-								class="bg-brand-orange absolute top-1/2 left-0 size-7 -translate-y-1/2 rounded-full group-hover:animate-ping"
-						></span>
-					</div>
-					<h3 class="group-hover:text-brand-orange mt-8 mb-4 transition-colors">2024</h3>
-					<h4 class="mb-3 font-semibold">Building for Business Growth</h4>
-					<p class="text-brand-light">
-						KKEYDOS focused increasingly on solutions designed around business operations,
-						automation, scalability, and long-term product growth.
-					</p>
-				</article>
-				<article class="group shrink-0 grow basis-64 md:basis-80 xl:basis-1/4">
-					<div class="relative my-4 flex h-px items-center" aria-hidden="true">
-						<div
-								class="from-brand-orange to-primary absolute inset-x-0 h-px bg-linear-to-r"
-						></div>
-						<span
-								class="bg-brand-orange ring-brand-orange/20 absolute top-1/2 left-0 size-7 -translate-y-1/2 rounded-full ring-8 group-hover:ring-0"
-						></span>
-						<span
-								class="bg-brand-orange absolute top-1/2 left-0 size-7 -translate-y-1/2 rounded-full group-hover:animate-ping"
-						></span>
-					</div>
-					<h3 class="group-hover:text-brand-orange mt-8 mb-4 transition-colors">2025</h3>
-					<h4 class="mb-3 font-semibold">Moving Toward AI & SaaS</h4>
-					<p class="text-brand-light">
-						We began placing greater focus on AI-powered solutions, SaaS products, automation,
-						and next-generation business applications.
-					</p>
-				</article>
-				<article class="group shrink-0 grow basis-64 md:basis-80 xl:basis-1/4">
-					<div class="relative my-4 flex h-px items-center" aria-hidden="true">
-						<div
-								class="from-brand-orange to-primary absolute inset-x-0 h-px bg-linear-to-r"
-						></div>
-						<span
-								class="bg-brand-orange ring-brand-orange/20 absolute top-1/2 left-0 size-7 -translate-y-1/2 rounded-full ring-8 group-hover:ring-0"
-						></span>
-						<span
-								class="bg-brand-orange absolute top-1/2 left-0 size-7 -translate-y-1/2 rounded-full group-hover:animate-ping"
-						></span>
-					</div>
-					<h3 class="group-hover:text-brand-orange mt-8 mb-4 transition-colors">2026</h3>
-					<h4 class="mb-3 font-semibold">Building What’s Next</h4>
-					<p class="text-brand-light">
-						Today, KKEYDOS has delivered 280+ products for 177+ clients worldwide, with a
-						growing focus on building scalable digital products and technology solutions for the
-						next generation of businesses.
-					</p>
-				</article>
-			</div>
-		</div>
-	</section>
-	<section class="black-section" data-cta-glow>
-		<div class="page-container flex items-center gap-12 max-lg:flex-col">
-			<div
-					class="flex-1 max-lg:order-1 max-lg:mx-auto max-lg:w-full max-lg:max-w-140 max-lg:text-center"
-			>
-				<h2 class="mb-4">
-					Let’s build something that truly matters.
-				</h2>
-				<p class="mb-8 text-xl text-white/80 max-md:text-lg">
-					We take the time to understand your business, your people, and what you’re trying to
-					achieve before we write a single line of code.
+				<p class="eyebrow">
+					Contact us
 				</p>
-				<a class="btn" href="#">
-					Back a Discovery Call
-				</a>
+
+				<h1 class="font-medium mt-1">
+					How Can We <span class="text-brand-orange">Help?</span>
+				</h1>
 			</div>
-			<div class="flex-1 max-lg:w-full">
+
+			<div
+					class="max-w-175 h-110 flex-1   translate-y-10 overflow-hidden rounded-2xl shadow-default
+				 max-md:translate-y-0 max-md:h-56 max-md:flex-none max-md:w-full max-md:max-w-full"
+			>
 				<img
-						src="assets/images/pages/about/discovery-team.webp"
-						alt="A team discussing a software project around a laptop"
-						loading="lazy"
-						decoding="async"
-						width="1536"
-						height="1024"
+						class="size-full block object-cover object-left max-md:object-center"
+						src="assets/images/pages/contact/hero-team.jpg"
+						alt="Software team collaborating around computers in a bright office"
+						width="1774"
+						height="887"
+						fetchpriority="high"
 				/>
 			</div>
 		</div>
 	</section>
+	<section class="section-padding mt-10 max-md:mt-0">
+		<div class="page-container">
+			<div
+					class="border-brand-border shadow-default
+					 mx-auto  max-w-4xl
+					  rounded-2xl border bg-white p-10
+					  max-sm:p-5"
+			>
+
+				<h2 class="mb-3 text-4xl max-md:text-3xl">
+					Tell us about
+					<span class="text-brand-orange">your project</span>
+				</h2>
+
+				<p class="text-brand-gray">
+					Share a few details and we’ll get back to you within 1 business day.
+				</p>
+
+				<form class="grid grid-cols-2 gap-6 max-sm:grid-cols-1">
+
+					<label class="relative block">
+				<span class="mb-2 block text-sm font-semibold">
+					Your Name <span class="text-brand-orange">*</span>
+				</span>
+
+						<svg
+								class="text-brand-gray pointer-events-none absolute bottom-3 left-3 size-5"
+								aria-hidden="true"
+						>
+							<use href="assets/images/icons.svg#users"></use>
+						</svg>
+
+						<input
+								class="input pl-10"
+								name="name"
+								type="text"
+								placeholder="John Smith"
+								required
+								autocomplete="name"
+								maxlength="120"
+						/>
+					</label>
+
+					<label class="relative block">
+				<span class="mb-2 block text-sm font-semibold">
+					Work Email <span class="text-brand-orange">*</span>
+				</span>
+
+						<svg
+								class="text-brand-gray pointer-events-none absolute bottom-3 left-3 size-5"
+								aria-hidden="true"
+						>
+							<use href="assets/images/icons.svg#contact-email"></use>
+						</svg>
+
+						<input
+								class="input pl-10"
+								name="email"
+								type="email"
+								placeholder="john@company.com"
+								required
+								autocomplete="email"
+								maxlength="254"
+						/>
+					</label>
+
+					<label class="relative block min-w-0">
+				<span class="mb-2 block text-sm font-semibold">
+					Company Name
+				</span>
+
+						<svg
+								class="text-brand-gray pointer-events-none absolute bottom-3 left-3 size-5"
+								aria-hidden="true"
+						>
+							<use href="assets/images/icons.svg#building"></use>
+						</svg>
+
+						<input
+								class="input pl-10"
+								name="company"
+								type="text"
+								placeholder="Company / Startup"
+								autocomplete="organization"
+								maxlength="120"
+						/>
+					</label>
+
+					<div class="relative block min-w-0">
+						<label
+								for="project-phone"
+								class="mb-2 block text-sm font-semibold"
+						>
+							Mobile Number
+						</label>
+
+						<div class="select-field flex gap-2">
+							<div class="select">
+								<button class="select__button min-w-27" aria-expanded="false" type="button">
+									<span class="whitespace-nowrap" data-select-button-value>IN +91</span>
+									<svg aria-hidden="true">
+										<use href="assets/images/icons.svg#chevron-bottom"></use>
+									</svg>
+								</button>
+
+								<div class="select__dropdown" data-open="false" role="listbox">
+									<button
+											class="select__dropdown-button"
+											data-select="US +1"
+											aria-selected="false"
+											role="option"
+											type="button"
+									>
+                        <span
+		                        class="border-brand-border text-brand-muted-gray grid size-7 place-items-center rounded-md border bg-white text-ten font-semibold"
+                        >
+                          US
+                        </span>
+										<span>United States</span>
+										<span class="text-brand-muted-gray-alt ml-auto text-xs tabular-nums"
+										>+1</span
+										>
+									</button>
+
+									<button
+											class="select__dropdown-button"
+											data-select="UK +44"
+											aria-selected="false"
+											role="option"
+											type="button"
+									>
+                        <span
+		                        class="border-brand-border text-brand-muted-gray grid size-7 place-items-center rounded-md border bg-white text-ten font-semibold"
+                        >
+                          UK
+                        </span>
+										<span>United Kingdom</span>
+										<span class="text-brand-muted-gray-alt ml-auto text-xs tabular-nums"
+										>+44</span
+										>
+									</button>
+
+									<button
+											class="select__dropdown-button"
+											data-select="AM +374"
+											aria-selected="false"
+											role="option"
+											type="button"
+									>
+                        <span
+		                        class="border-brand-border text-brand-muted-gray grid size-7 place-items-center rounded-md border bg-white text-ten font-semibold"
+                        >
+                          AM
+                        </span>
+										<span>Armenia</span>
+										<span class="text-brand-muted-gray-alt ml-auto text-xs tabular-nums"
+										>+374</span
+										>
+									</button>
+
+									<button
+											class="select__dropdown-button"
+											data-select="DE +49"
+											aria-selected="false"
+											role="option"
+											type="button"
+									>
+                        <span
+		                        class="border-brand-border text-brand-muted-gray grid size-7 place-items-center rounded-md border bg-white text-ten font-semibold"
+                        >
+                          DE
+                        </span>
+										<span>Germany</span>
+										<span class="text-brand-muted-gray-alt ml-auto text-xs tabular-nums"
+										>+49</span
+										>
+									</button>
+
+									<button
+											class="select__dropdown-button"
+											data-select="FR +33"
+											aria-selected="false"
+											role="option"
+											type="button"
+									>
+                        <span
+		                        class="border-brand-border text-brand-muted-gray grid size-7 place-items-center rounded-md border bg-white text-ten font-semibold"
+                        >
+                          FR
+                        </span>
+										<span>France</span>
+										<span class="text-brand-muted-gray-alt ml-auto text-xs tabular-nums"
+										>+33</span
+										>
+									</button>
+
+									<button
+											class="select__dropdown-button"
+											data-select="ES +34"
+											aria-selected="false"
+											role="option"
+											type="button"
+									>
+                        <span
+		                        class="border-brand-border text-brand-muted-gray grid size-7 place-items-center rounded-md border bg-white text-ten font-semibold"
+                        >
+                          ES
+                        </span>
+										<span>Spain</span>
+										<span class="text-brand-muted-gray-alt ml-auto text-xs tabular-nums"
+										>+34</span
+										>
+									</button>
+
+									<button
+											class="select__dropdown-button"
+											data-select="IT +39"
+											aria-selected="false"
+											role="option"
+											type="button"
+									>
+                        <span
+		                        class="border-brand-border text-brand-muted-gray grid size-7 place-items-center rounded-md border bg-white text-ten font-semibold"
+                        >
+                          IT
+                        </span>
+										<span>Italy</span>
+										<span class="text-brand-muted-gray-alt ml-auto text-xs tabular-nums"
+										>+39</span
+										>
+									</button>
+
+									<button
+											class="select__dropdown-button"
+											data-select="NL +31"
+											aria-selected="false"
+											role="option"
+											type="button"
+									>
+                        <span
+		                        class="border-brand-border text-brand-muted-gray grid size-7 place-items-center rounded-md border bg-white text-ten font-semibold"
+                        >
+                          NL
+                        </span>
+										<span>Netherlands</span>
+										<span class="text-brand-muted-gray-alt ml-auto text-xs tabular-nums"
+										>+31</span
+										>
+									</button>
+
+									<button
+											class="select__dropdown-button"
+											data-select="AU +61"
+											aria-selected="false"
+											role="option"
+											type="button"
+									>
+                        <span
+		                        class="border-brand-border text-brand-muted-gray grid size-7 place-items-center rounded-md border bg-white text-ten font-semibold"
+                        >
+                          AU
+                        </span>
+										<span>Australia</span>
+										<span class="text-brand-muted-gray-alt ml-auto text-xs tabular-nums"
+										>+61</span
+										>
+									</button>
+
+									<button
+											class="select__dropdown-button"
+											data-select="IN +91"
+											aria-selected="true"
+											role="option"
+											type="button"
+									>
+                        <span
+		                        class="border-brand-border text-brand-muted-gray grid size-7 place-items-center rounded-md border bg-white text-ten font-semibold"
+                        >
+                          IN
+                        </span>
+										<span>India</span>
+										<span class="text-brand-muted-gray-alt ml-auto text-xs tabular-nums"
+										>+91</span
+										>
+									</button>
+
+									<button
+											class="select__dropdown-button"
+											data-select="AE +971"
+											aria-selected="false"
+											role="option"
+											type="button"
+									>
+                        <span
+		                        class="border-brand-border text-brand-muted-gray grid size-7 place-items-center rounded-md border bg-white text-ten font-semibold"
+                        >
+                          AE
+                        </span>
+										<span>United Arab Emirates</span>
+										<span class="text-brand-muted-gray-alt ml-auto text-xs tabular-nums"
+										>+971</span
+										>
+									</button>
+
+									<button
+											class="select__dropdown-button"
+											data-select="IL +972"
+											aria-selected="false"
+											role="option"
+											type="button"
+									>
+                        <span
+		                        class="border-brand-border text-brand-muted-gray grid size-7 place-items-center rounded-md border bg-white text-ten font-semibold"
+                        >
+                          IL
+                        </span>
+										<span>Israel</span>
+										<span class="text-brand-muted-gray-alt ml-auto text-xs tabular-nums"
+										>+972</span
+										>
+									</button>
+
+									<button
+											class="select__dropdown-button"
+											data-select="BR +55"
+											aria-selected="false"
+											role="option"
+											type="button"
+									>
+                        <span
+		                        class="border-brand-border text-brand-muted-gray grid size-7 place-items-center rounded-md border bg-white text-ten font-semibold"
+                        >
+                          BR
+                        </span>
+										<span>Brazil</span>
+										<span class="text-brand-muted-gray-alt ml-auto text-xs tabular-nums"
+										>+55</span
+										>
+									</button>
+
+									<button
+											class="select__dropdown-button"
+											data-select="MX +52"
+											aria-selected="false"
+											role="option"
+											type="button"
+									>
+                        <span
+		                        class="border-brand-border text-brand-muted-gray grid size-7 place-items-center rounded-md border bg-white text-ten font-semibold"
+                        >
+                          MX
+                        </span>
+										<span>Mexico</span>
+										<span class="text-brand-muted-gray-alt ml-auto text-xs tabular-nums"
+										>+52</span
+										>
+									</button>
+
+									<button
+											class="select__dropdown-button"
+											data-select="AR +54"
+											aria-selected="false"
+											role="option"
+											type="button"
+									>
+                        <span
+		                        class="border-brand-border text-brand-muted-gray grid size-7 place-items-center rounded-md border bg-white text-ten font-semibold"
+                        >
+                          AR
+                        </span>
+										<span>Argentina</span>
+										<span class="text-brand-muted-gray-alt ml-auto text-xs tabular-nums"
+										>+54</span
+										>
+									</button>
+
+									<button
+											class="select__dropdown-button"
+											data-select="CO +57"
+											aria-selected="false"
+											role="option"
+											type="button"
+									>
+                        <span
+		                        class="border-brand-border text-brand-muted-gray grid size-7 place-items-center rounded-md border bg-white text-ten font-semibold"
+                        >
+                          CO
+                        </span>
+										<span>Colombia</span>
+										<span class="text-brand-muted-gray-alt ml-auto text-xs tabular-nums"
+										>+57</span
+										>
+									</button>
+								</div>
+
+								<input type="hidden"/>
+							</div>
+							<input class="input" id="project-phone" name="project-phone" type="text"
+							       placeholder="Mobile number"/>
+						</div>
+					</div>
+
+					<fieldset
+							class="col-span-2 max-sm:col-span-1"
+					>
+						<legend class="mb-3 text-sm font-semibold">
+							What do you need?
+							<span class="text-brand-orange">*</span>
+						</legend>
+
+						<div class="grid grid-cols-4 gap-3 max-md:grid-cols-2 max-sm:grid-cols-1">
+							<label class="service-option">
+								<input
+										class="sr-only"
+										type="radio"
+										name="services"
+										value="SaaS Development"
+										checked
+										required
+								/>
+
+								<svg aria-hidden="true">
+									<use href="assets/images/icons.svg#cloud"></use>
+								</svg>
+
+								<span>SaaS Development</span>
+							</label>
+
+							<label class="service-option">
+								<input
+										class="sr-only"
+										type="radio"
+										name="services"
+										value="Web Application"
+								/>
+
+								<svg aria-hidden="true">
+									<use href="assets/images/icons.svg#monitor"></use>
+								</svg>
+
+								<span>Web Application</span>
+							</label>
+
+							<label class="service-option">
+								<input
+										class="sr-only"
+										type="radio"
+										name="services"
+										value="Mobile App"
+								/>
+
+								<svg class="size-5" aria-hidden="true">
+									<use href="assets/images/icons.svg#mobile"></use>
+								</svg>
+
+								<span>Mobile App</span>
+							</label>
+
+							<label class="service-option">
+								<input
+										class="sr-only"
+										type="radio"
+										name="services"
+										value="AI &amp; Automation"
+								/>
+
+								<svg aria-hidden="true">
+									<use href="assets/images/icons.svg#sparkles"></use>
+								</svg>
+
+								<span>AI &amp; Automation</span>
+							</label>
+
+							<label class="service-option">
+								<input
+										class="sr-only"
+										type="radio"
+										name="services"
+										value="ERP / CRM"
+								/>
+
+								<svg class="size-5" aria-hidden="true">
+									<use href="assets/images/icons.svg#database"></use>
+								</svg>
+
+								<span>ERP / CRM</span>
+							</label>
+
+							<label class="service-option">
+								<input
+										class="sr-only"
+										type="radio"
+										name="services"
+										value="E-commerce"
+								/>
+
+								<svg class="size-5" aria-hidden="true">
+									<use href="assets/images/icons.svg#shopping-bag"></use>
+								</svg>
+
+								<span>E-commerce</span>
+							</label>
+
+							<label class="service-option">
+								<input
+										class="sr-only"
+										type="radio"
+										name="services"
+										value="Custom Software"
+								/>
+
+								<svg aria-hidden="true">
+									<use href="assets/images/icons.svg#settings"></use>
+								</svg>
+
+								<span>Custom Software</span>
+							</label>
+
+							<label class="service-option">
+								<input
+										class="sr-only"
+										type="radio"
+										name="services"
+										value="Other"
+								/>
+
+								<svg aria-hidden="true">
+									<use href="assets/images/icons.svg#message"></use>
+								</svg>
+
+								<span>Other</span>
+							</label>
+						</div>
 
 
+					</fieldset>
 
+					<label class="col-span-2 max-sm:col-span-1">
+				<span class="mb-2 block text-sm font-semibold">
+					Tell us about your project
+					<span class="text-brand-orange">*</span>
+				</span>
+
+						<textarea
+								class="textarea min-h-32 p-3"
+								name="description"
+								placeholder="What are you looking to build? Goals, features, timeline, etc."
+								rows="4"
+								maxlength="5000"
+								required
+						></textarea>
+					</label>
+
+					<div class="select select-field relative block">
+				<span
+						class="mb-2 block text-sm font-semibold"
+						id="project-budget-label"
+				>
+					Budget Range
+				</span>
+
+						<svg
+								class="text-brand-gray pointer-events-none absolute bottom-3 left-3 z-10 size-5"
+								aria-hidden="true"
+						>
+							<use href="assets/images/icons.svg#dollar"></use>
+						</svg>
+
+						<input
+								type="hidden"
+								name="budget"
+								value=""
+						/>
+
+						<button
+								class="select__button pl-10"
+								type="button"
+								aria-expanded="false"
+								aria-haspopup="listbox"
+								aria-controls="project-budget-options"
+								aria-labelledby="project-budget-label project-budget-value"
+						>
+					<span
+							class="text-left"
+							id="project-budget-value"
+							data-select-button-value
+					>
+						Select budget range
+					</span>
+
+							<svg class="shrink-0" aria-hidden="true">
+								<use href="assets/images/icons.svg#chevron-bottom"></use>
+							</svg>
+						</button>
+
+						<div
+								class="select__dropdown"
+								id="project-budget-options"
+								role="listbox"
+								aria-labelledby="project-budget-label"
+								data-open="false"
+						>
+							<button
+									class="select__dropdown-button"
+									type="button"
+									role="option"
+									data-select="Under $10,000"
+									aria-selected="false"
+							>
+								Under $10,000
+							</button>
+
+							<button
+									class="select__dropdown-button"
+									type="button"
+									role="option"
+									data-select="$10,000 – $25,000"
+									aria-selected="false"
+							>
+								$10,000 – $25,000
+							</button>
+
+							<button
+									class="select__dropdown-button"
+									type="button"
+									role="option"
+									data-select="$25,000 – $50,000"
+									aria-selected="false"
+							>
+								$25,000 – $50,000
+							</button>
+
+							<button
+									class="select__dropdown-button"
+									type="button"
+									role="option"
+									data-select="$50,000 – $100,000"
+									aria-selected="false"
+							>
+								$50,000 – $100,000
+							</button>
+
+							<button
+									class="select__dropdown-button"
+									type="button"
+									role="option"
+									data-select="$100,000+"
+									aria-selected="false"
+							>
+								$100,000+
+							</button>
+
+							<button
+									class="select__dropdown-button"
+									type="button"
+									role="option"
+									data-select="Let’s discuss"
+									aria-selected="false"
+							>
+								Let’s discuss
+							</button>
+						</div>
+					</div>
+
+					<div class="select select-field relative block">
+				<span
+						class="mb-2 block text-sm font-semibold"
+						id="project-timeline-label"
+				>
+					Expected Start
+				</span>
+
+						<svg
+								class="text-brand-gray pointer-events-none absolute bottom-3 left-3 z-10 size-5"
+								aria-hidden="true"
+						>
+							<use href="assets/images/icons.svg#product"></use>
+						</svg>
+
+						<input
+								type="hidden"
+								name="timeline"
+								value=""
+						/>
+
+						<button
+								class="select__button pl-10"
+								type="button"
+								aria-expanded="false"
+								aria-haspopup="listbox"
+								aria-controls="project-timeline-options"
+								aria-labelledby="project-timeline-label project-timeline-value"
+						>
+					<span
+							class="text-left"
+							id="project-timeline-value"
+							data-select-button-value
+					>
+						Select timeline
+					</span>
+
+							<svg class="shrink-0" aria-hidden="true">
+								<use href="assets/images/icons.svg#chevron-bottom"></use>
+							</svg>
+						</button>
+
+						<div
+								class="select__dropdown"
+								id="project-timeline-options"
+								role="listbox"
+								aria-labelledby="project-timeline-label"
+								data-open="false"
+						>
+							<button
+									class="select__dropdown-button"
+									type="button"
+									role="option"
+									data-select="As soon as possible"
+									aria-selected="false"
+							>
+								As soon as possible
+							</button>
+
+							<button
+									class="select__dropdown-button"
+									type="button"
+									role="option"
+									data-select="Within 1 month"
+									aria-selected="false"
+							>
+								Within 1 month
+							</button>
+
+							<button
+									class="select__dropdown-button"
+									type="button"
+									role="option"
+									data-select="Within 3 months"
+									aria-selected="false"
+							>
+								Within 3 months
+							</button>
+
+							<button
+									class="select__dropdown-button"
+									type="button"
+									role="option"
+									data-select="Within 6 months"
+									aria-selected="false"
+							>
+								Within 6 months
+							</button>
+
+							<button
+									class="select__dropdown-button"
+									type="button"
+									role="option"
+									data-select="Exploring options"
+									aria-selected="false"
+							>
+								Exploring options
+							</button>
+						</div>
+					</div>
+
+					<button
+							class="btn col-span-2 mx-auto w-full max-w-80 max-sm:col-span-1"
+							type="submit"
+							disabled
+					>
+						Prepare Project Email
+					</button>
+
+					<a
+							class="text-brand-teal arrow-btn col-span-2 mx-auto w-fit max-sm:col-span-1"
+							data-project-email=""
+							hidden
+					>
+						Open your project email
+
+						<svg aria-hidden="true">
+							<use href="assets/images/icons.svg#arrow-right"></use>
+						</svg>
+					</a>
+				</form>
+
+				<div class="mt-12 flex flex-wrap justify-center gap-x-16 gap-y-6">
+					<div>
+						<h3 class="mb-3 text-lg">Call us</h3>
+
+						<a
+								class="text-brand-gray hover:text-brand-teal"
+								href="tel:+919581083083"
+						>
+							+91-9581083083
+						</a>
+					</div>
+
+					<div>
+						<h3 class="mb-3 text-lg">Email us</h3>
+
+						<a
+								class="text-brand-gray hover:text-brand-teal"
+								href="mailto:info@kkeydos.com"
+						>
+							info@kkeydos.com
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-margin black-section" data-cta-glow>
+		<div class="page-container grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+			<div class="max-lg:mx-auto max-lg:max-w-xl max-lg:text-center">
+				<p class="text-brand-orange mb-5 text-sm font-semibold tracking-widest uppercase">Our office</p>
+				<h2 class="max-w-xl text-5xl leading-tight max-md:text-4xl">
+					Find us in <span class="text-brand-orange">Hyderabad.</span>
+				</h2>
+				<p class="mt-6 max-w-lg text-lg leading-relaxed text-white/75 max-lg:mx-auto">
+					Meet the KKEYDOS team at Manjeera Trinity Corporate, in the heart of Kukatpally.
+				</p>
+				<address class="mt-6 text-base leading-relaxed text-white/80 not-italic">
+					AlienWorkHub, 4th Floor, Unit 406<br />
+					Manjeera Trinity Corporate, KPHB Phase 3<br />
+					Kukatpally, Hyderabad, Telangana 500072
+				</address>
+				<a
+						class="btn mt-8"
+						href="https://www.google.com/maps/dir/?api=1&amp;destination=17.48916%2C78.39278"
+						target="_blank"
+						rel="noopener noreferrer"
+				>Get directions</a>
+			</div>
+			<div class="relative overflow-hidden rounded-2xl border border-white/15 bg-white shadow-2xl">
+				<iframe
+						class="block  w-full border-0"
+						src="https://maps.google.com/maps?q=17.48916%2C78.39278&amp;z=16&amp;output=embed"
+						title="KKEYDOS office — Manjeera Trinity Corporate, Kukatpally, Hyderabad"
+						width="600"
+						height="500"
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+						allowfullscreen
+				></iframe>
+			</div>
+		</div>
+	</section>
 </main>
 
 <footer class="overflow-hidden">

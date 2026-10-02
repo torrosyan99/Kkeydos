@@ -1235,13 +1235,13 @@
 				</div>
 				<form class="mt-5 flex flex-col gap-2.5">
 					<div>
-						<input class="input" name="name" type="text" placeholder="Your name" />
+						<input class="input" name="name" type="text" placeholder="Your name" aria-label="Your name" autocomplete="name" />
 					</div>
 					<div>
-						<input class="input" name="name" type="text" placeholder="Your email" />
+						<input class="input" name="email" type="email" placeholder="Your email" aria-label="Your email" autocomplete="email" />
 					</div>
 					<div>
-						<input class="input" name="name" type="text" placeholder="Company name" />
+						<input class="input" name="company" type="text" placeholder="Company name" aria-label="Company name" autocomplete="organization" />
 					</div>
 					<div class="select-field flex gap-2">
 						<div class="select">
@@ -1540,13 +1540,15 @@
 								</button>
 							</div>
 
-							<input type="hidden" />
+							<input type="hidden" name="country_code" value="IN +91" />
 						</div>
-						<input class="input" type="text" placeholder="Mobile number" />
+						<input class="input" name="phone" type="tel" placeholder="Mobile number" aria-label="Mobile number" autocomplete="tel-national" />
 					</div>
 					<div>
                 <textarea
 		                class="textarea"
+                  name="description"
+                  aria-label="Project requirements"
 		                placeholder="Tell us about your FinTech requirements."
                 ></textarea>
 					</div>

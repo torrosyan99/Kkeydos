@@ -4,7 +4,7 @@
     --cta-skew-offset: 7px;
 
     @apply relative isolate inline-flex h-12 items-center justify-center;
-    @apply gap-2 pr-8 pl-6 font-semibold text-white;
+    @apply gap-2 pr-8 pl-6 font-semibold text-white cursor-pointer;
 
     transition:
       transform 150ms ease,
@@ -48,7 +48,7 @@
   }
 
   .btn-secondary {
-    @apply inline-flex h-12 items-center justify-center gap-2 px-6 font-semibold;
+    @apply inline-flex h-12 items-center cursor-pointer justify-center gap-2 px-6 font-semibold;
     @apply bg-brand-teal rounded-lg text-white;
     @apply transition-[transform,filter,box-shadow];
     @apply hover:-translate-y-0.5 hover:shadow-lg hover:brightness-110;
@@ -69,7 +69,7 @@
 
   .sliding-btn {
     container-type: inline-size;
-    @apply border-primary text-primary inline-flex shrink-0 overflow-hidden border-b-2 pb-2 font-medium;
+    @apply border-primary text-primary inline-flex cursor-pointer shrink-0 overflow-hidden border-b-2 pb-2 font-medium;
 
     span {
       @apply inline-flex w-max items-center gap-2 transition-transform ease-out;
@@ -84,7 +84,7 @@
     @apply grid size-10 cursor-pointer place-items-center;
     @apply border-brand-border text-brand-orange rounded-full border bg-white;
     @apply hover:border-brand-orange hover:bg-brand-orange transition-colors hover:text-white;
-    @apply disabled:pointer-events-none disabled:opacity-35;
+    @apply disabled:pointer-events-none  disabled:opacity-35;
 
     &.swiper-button-lock {
       @apply hidden;
@@ -93,7 +93,7 @@
 
   .btn-outline {
     @apply border-primary inline-flex h-12 items-center justify-center gap-2 rounded-md border-2 px-4;
-    @apply text-primary font-bold transition-colors;
+    @apply text-primary font-bold transition-colors cursor-pointer;
     @apply hover:bg-primary hover:text-white;
   }
 
