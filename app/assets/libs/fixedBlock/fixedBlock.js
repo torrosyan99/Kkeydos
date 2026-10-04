@@ -1,11 +1,7 @@
 export function fixedBlock(
   fixedSelector,
   contentSelector,
-  {
-    topPosition = 80,
-    onChange = () => {},
-    trackDirection = false,
-  } = {},
+  { topPosition = 80, onChange = () => {}, trackDirection = false } = {},
 ) {
   const fixed = document.querySelector(fixedSelector);
   const content = document.querySelector(contentSelector);

@@ -1,6 +1,6 @@
 import '../libs/text-rotator/text-rotator.js';
-import { marquee } from '../libs/vanilla-marquee/vanilla-marquee.js';
-import { initToggleGroup } from '../libs/initToggleGroup/initToggleGroup.js';
+import {marquee} from '../libs/vanilla-marquee/vanilla-marquee.js';
+import {initToggleGroup} from '../libs/initToggleGroup/initToggleGroup.js';
 
 const header = document.querySelector('#header');
 const menuButton = document.querySelector('#menu-button');
@@ -49,13 +49,13 @@ document.querySelectorAll('[data-marquee]').forEach((element) => {
       element.dataset.marqueePauseOnHover === undefined
         ? true
         : element.dataset.marqueePauseOnHover === 'true' ||
-          element.dataset.marqueePauseOnHover === '',
+        element.dataset.marqueePauseOnHover === '',
 
     startVisible:
       element.dataset.marqueeStartVisible === undefined
         ? true
         : element.dataset.marqueeStartVisible === 'true' ||
-          element.dataset.marqueeStartVisible === '',
+        element.dataset.marqueeStartVisible === '',
   });
 });
 
@@ -249,4 +249,37 @@ document.querySelectorAll('[data-cta-glow]').forEach((cta) => {
     cta.style.setProperty('--glow-x', `${event.clientX - rect.left}px`);
     cta.style.setProperty('--glow-y', `${event.clientY - rect.top}px`);
   });
+});
+
+
+// Top progress
+
+document.querySelectorAll('[data-progress]').forEach((progress) => {
+  const content = document.querySelector(progress.dataset.contentSelector);
+
+  if (content) {
+
+
+    function updateProgress() {
+      const rect = content.getBoundingClientRect();
+      console.log(rect)
+      console.log(window.scrollY)
+      const contentTop = rect.top + window.scrollY;
+      const contentHeight = content.offsetHeight;
+
+      const scrolled = window.scrollY - contentTop;
+      const scrollable = contentHeight - window.innerHeight;
+
+      const value = Math.min(Math.max(scrolled / scrollable, 0), 1);
+
+      progress.style.setProperty('--reading-progress', value);
+    }
+
+    window.addEventListener('scroll', updateProgress);
+    window.addEventListener('resize', updateProgress);
+
+    updateProgress();
+
+
+  }
 });

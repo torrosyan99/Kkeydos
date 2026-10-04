@@ -55,16 +55,19 @@
     @apply active:translate-y-0 active:scale-98 active:shadow-none;
   }
 
-  .arrow-btn {
+  .arrow-btn,.arrow-left-btn {
     @apply flex items-center gap-2 font-semibold;
 
     svg {
       @apply size-4 transition-transform;
     }
 
-    &:hover svg {
+  }
+  .arrow-btn:hover svg {
       @apply translate-x-1;
     }
+  .arrow-left-btn:hover svg {
+    @apply -translate-x-1;
   }
 
   .sliding-btn {
