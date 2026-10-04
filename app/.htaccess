@@ -4,6 +4,9 @@ RewriteEngine On
 RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
 RewriteRule ^(.+)\.html$ /$1 [R=301,L,NE]
 
+# The blog listing shares its name with the category directory.
+RewriteRule ^blog/?$ blog.html [L]
+
 # Internally load .html file for extensionless URLs
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f

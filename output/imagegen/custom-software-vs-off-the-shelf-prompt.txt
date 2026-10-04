@@ -1,0 +1,11 @@
+Tool: built-in image_gen
+Asset: app/assets/images/pages/blog/custom-software-vs-off-the-shelf.webp
+Original: output/imagegen/custom-software-vs-off-the-shelf.png
+
+Use case: stylized-concept.
+Asset type: technology blog card cover for "Custom Software vs Off-the-Shelf Software: What Should Your Business Choose?"
+Create ONE new standalone 16:9 landscape illustration at 1536x864 if possible. Match this site's existing covers: polished soft 3D technology objects, luminous beveled glassy dashboard panels, deep midnight navy backgrounds, violet and electric blue accent lighting, subtle reflections on a dark studio floor, simple premium tech editorial finish.
+Subject: a clear balanced comparison of custom-built software and ready-made packaged software. On the left, one large violet-framed application window with abstract colored code lines and three interlocking modular blocks, communicating tailored development and flexible configuration. On the right, one large cyan-blue ready-made application window with a tidy uniform grid of app tiles, a checklist and a small closed software package box in front. One small elegant circular VS medallion between the two sides. Both choices look professional and equally appealing.
+Composition: few oversized elements with strong readable silhouettes, centered within the central 85 percent of the canvas so the cover works at small card sizes. Straight-on slightly isometric 3D view. Spacious clear arrangement, restrained details, consistent scale and visual weight on both sides. Full bleed rectangular artwork.
+Lighting: soft studio illumination, purple rim glow at left, blue-cyan rim glow at right, dimensional smooth surfaces, subtle bloom.
+Text: only "VS" in the central medallion. No headlines, captions, brand logos, watermarks, people, photographs, outer borders or white margins.
