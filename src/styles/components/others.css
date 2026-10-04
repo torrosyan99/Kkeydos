@@ -71,6 +71,11 @@
     transform: scaleX(var(--reading-progress, 0));
   }
 
+  .article-cover {
+    aspect-ratio: 2 / 1;
+    object-fit: cover;
+  }
+
   .article-related {
     max-height: calc(100dvh - 8rem);
 
