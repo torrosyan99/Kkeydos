@@ -2841,6 +2841,12 @@
   .group-data-\[fixed\=true\]\:inline-flex:is(:where(.group)[data-fixed="true"] *) {
     display: inline-flex;
   }
+  .group-data-\[fixed\=true\]\:bg-black\/50:is(:where(.group)[data-fixed="true"] *) {
+    background-color: color-mix(in srgb, #000 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 50%, transparent);
+    }
+  }
   .group-data-\[fixed\=true\]\:bg-black\/60:is(:where(.group)[data-fixed="true"] *) {
     background-color: color-mix(in srgb, #000 60%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -3067,6 +3073,21 @@
   .hover\:brightness-75:hover {
     --tw-brightness: brightness(75%);
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .group-data-\[fixed\=true\]\:hover\:bg-black\/30:is(:where(.group)[data-fixed="true"] *):hover {
+    background-color: color-mix(in srgb, #000 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 30%, transparent);
+    }
+  }
+  .group-data-\[fixed\=true\]\:hover\:bg-black\/60:is(:where(.group)[data-fixed="true"] *):hover {
+    background-color: color-mix(in srgb, #000 60%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 60%, transparent);
+    }
+  }
+  .group-data-\[fixed\=true\]\:hover\:text-white:is(:where(.group)[data-fixed="true"] *):hover {
+    color: var(--color-white);
   }
   .group-data-\[stuck\=true\]\/blog\:hover\:bg-neutral-600:is(:where(.group\/blog)[data-stuck="true"] *):hover {
     background-color: var(--color-neutral-600);
