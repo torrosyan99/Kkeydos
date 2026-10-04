@@ -1182,19 +1182,19 @@
 			>
 				<div class="page-container-narrow pt-5">
 					<nav
-						class="bg-brand-light overflow-hidden text-brand-muted-gray-alt
-						group-data-[fixed=true]:shadow-default relative flex h-14
-						items-center rounded-lg
+						class="bg-brand-light overflow-hidden max-lg:overflow-visible text-brand-muted-gray-alt
+						group-data-[fixed=true]:shadow-default relative flex h-14 max-lg:h-10
+						items-center rounded-lg max-lg:has-[[data-open=true]]:rounded-b-none
 						 group-data-[fixed=true]:bg-black/60 group-data-[fixed=true]:text-white"
 						aria-label="Blog categories"
 					>
 						<div
-							class="group min-w-0 flex-1 rounded-lg bg-inherit"
+							class="group min-w-0 flex-1"
 							data-blog-menu
 							data-open="false"
 						>
 							<button
-								class="hidden items-center gap-2 px-4 py-3 max-md:flex"
+								class="hidden items-center gap-2 px-3 py-2 max-lg:flex"
 								type="button"
 								aria-expanded="false"
 								data-blog-trigger
@@ -1208,35 +1208,45 @@
 								</svg>
 							</button>
 							<div
-								class="max-md:shadow-default flex
-								overflow-x-auto overscroll-x-contain max-md:absolute
-								max-md:inset-x-0 max-md:top-full max-md:hidden max-md:flex-col
-								max-md:rounded-b-lg max-md:bg-inherit max-md:py-3
-								 max-md:group-data-[open=true]:flex"
+								class="max-lg:shadow-default flex
+								overflow-x-auto overscroll-x-contain max-lg:absolute
+								max-lg:inset-x-0 max-lg:top-full max-lg:hidden max-lg:flex-col
+								max-lg:max-h-[calc(100dvh-144px)] max-lg:overflow-y-auto max-lg:overscroll-y-contain
+								max-lg:rounded-b-lg max-lg:bg-brand-light
+								max-lg:group-data-[fixed=true]:bg-black/60
+								 max-lg:group-data-[open=true]:flex"
 							>
 								<a
-									class="flex h-14 shrink-0 items-center px-8 text-base font-bold transition-colors hover:bg-black/5 hover:text-primary group-data-[fixed=true]:hover:text-white group-data-[fixed=true]:hover:bg-black/60 max-lg:px-4 max-lg:font-normal max-md:h-auto max-md:py-3 max-md:text-lg max-md:font-medium bg-black/10 text-primary group-data-[fixed=true]:bg-black/50 group-data-[fixed=true]:text-white"
+									class="flex h-14 shrink-0 items-center px-6 text-base font-bold
+									transition-colors hover:bg-black/5 hover:text-primary
+									group-data-[fixed=true]:hover:text-white
+									group-data-[fixed=true]:hover:bg-black/30 max-lg:px-4 max-lg:font-normal
+									 max-lg:h-10 max-lg:py-2 max-md:text-base max-md:font-medium"
 									href="/blog"
 									aria-current="page"
 								>All</a>
 								<a
-									class="flex h-14 shrink-0 items-center px-8 text-base font-bold transition-colors hover:bg-black/5 hover:text-primary group-data-[fixed=true]:hover:text-white group-data-[fixed=true]:hover:bg-black/30 max-lg:px-4 max-lg:font-normal max-md:h-auto max-md:py-3 max-md:text-lg max-md:font-medium"
+									class="flex h-14 shrink-0 items-center px-6 text-base font-bold
+									transition-colors hover:bg-black/5 hover:text-primary
+									group-data-[fixed=true]:hover:text-white
+									group-data-[fixed=true]:hover:bg-black/30 max-lg:px-4 max-lg:font-normal
+									 max-lg:h-10 max-lg:py-2 max-md:text-base max-md:font-medium"
 									href="#"
 								>AI &amp; Automation</a>
 								<a
-									class="flex h-14 shrink-0 items-center px-8 text-base font-bold transition-colors hover:bg-black/5 hover:text-primary group-data-[fixed=true]:hover:text-white group-data-[fixed=true]:hover:bg-black/30 max-lg:px-4 max-lg:font-normal max-md:h-auto max-md:py-3 max-md:text-lg max-md:font-medium"
+									class="flex h-14 shrink-0 items-center px-6 text-base font-bold transition-colors hover:bg-black/5 hover:text-primary group-data-[fixed=true]:hover:text-white group-data-[fixed=true]:hover:bg-black/30 max-lg:px-4 max-lg:font-normal max-lg:h-10 max-lg:py-2 max-md:text-base max-md:font-medium"
 									href="/blog/category/software-development"
 								>Software Development</a>
 								<a
-									class="flex h-14 shrink-0 items-center px-8 text-base font-bold transition-colors hover:bg-black/5 hover:text-primary group-data-[fixed=true]:hover:text-white group-data-[fixed=true]:hover:bg-black/30 max-lg:px-4 max-lg:font-normal max-md:h-auto max-md:py-3 max-md:text-lg max-md:font-medium"
+									class="flex h-14 shrink-0 items-center px-6 text-base font-bold transition-colors hover:bg-black/5 hover:text-primary group-data-[fixed=true]:hover:text-white group-data-[fixed=true]:hover:bg-black/30 max-lg:px-4 max-lg:font-normal max-lg:h-10 max-lg:py-2 max-md:text-base max-md:font-medium"
 									href="#"
 								>SaaS &amp; Startups</a>
 								<a
-									class="flex h-14 shrink-0 items-center px-8 text-base font-bold transition-colors hover:bg-black/5 hover:text-primary group-data-[fixed=true]:hover:text-white group-data-[fixed=true]:hover:bg-black/30 max-lg:px-4 max-lg:font-normal max-md:h-auto max-md:py-3 max-md:text-lg max-md:font-medium"
+									class="flex h-14 shrink-0 items-center px-6 text-base font-bold transition-colors hover:bg-black/5 hover:text-primary group-data-[fixed=true]:hover:text-white group-data-[fixed=true]:hover:bg-black/30 max-lg:px-4 max-lg:font-normal max-lg:h-10 max-lg:py-2 max-md:text-base max-md:font-medium"
 									href="#"
 								>Business &amp; Technology</a>
 								<a
-									class="flex h-14 shrink-0 items-center px-8 text-base font-bold transition-colors hover:bg-black/5 hover:text-primary group-data-[fixed=true]:hover:text-white group-data-[fixed=true]:hover:bg-black/30 max-lg:px-4 max-lg:font-normal max-md:h-auto max-md:py-3 max-md:text-lg max-md:font-medium"
+									class="flex h-14 shrink-0 items-center px-6 text-base font-bold transition-colors hover:bg-black/5 hover:text-primary group-data-[fixed=true]:hover:text-white group-data-[fixed=true]:hover:bg-black/30 max-lg:px-4 max-lg:font-normal max-lg:h-10 max-lg:py-2 max-md:text-base max-md:font-medium"
 									href="#"
 								>Insights</a>
 							</div>
