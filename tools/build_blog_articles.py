@@ -579,7 +579,19 @@ def render_copy(copy):
 
 
 def category_link(article):
-    return f"../blog/category/{article['category_slug']}.html"
+    return f"../blog/category/{article['category_slug']}"
+
+
+def clean_internal_links(html):
+    def clean(match):
+        url = match.group(2)
+        if url.startswith(("http:", "https:", "//", "mailto:", "tel:")):
+            return match.group(0)
+        clean_url = re.sub(r"\.html(?=[?#]|$)", "", url)
+        clean_url = re.sub(r"(^|/)index(?=[?#]|$)", r"\1", clean_url)
+        return f'href={match.group(1)}{clean_url or "./"}{match.group(1)}'
+
+    return re.sub(r'\bhref=(["\'])([^"\']+)\1', clean, html)
 
 
 def render_article(article):
@@ -647,7 +659,7 @@ def render_article(article):
 </div></div>
 <aside class="flex flex-col gap-12 max-md:mt-10" aria-label="Related information"><div class="rounded-xl border border-blue-100 bg-blue-50 p-6 max-lg:p-4"><h2 class="text-xl">Have a Product Idea?</h2><p class="text-brand-gray my-4">Turn your idea into a digital product with KKEYDOS.</p><a class="btn w-full" href="../contact-us.html">Discuss Your Project</a></div><div class="rounded-xl border border-brand-border"><h2 class="bg-blue-50 px-4 py-5 text-xl">Related articles</h2><ul class="px-4 divide-brand-border divide-y">{related}</ul></div></aside>
 </div></section></main>'''
-    (BLOG / f"{article['slug']}.html").write_text(page_header + main + FOOTER, encoding="utf-8")
+    (BLOG / f"{article['slug']}.html").write_text(clean_internal_links(page_header + main + FOOTER), encoding="utf-8")
 
 
 def wire_links():
@@ -661,7 +673,6 @@ def wire_links():
             html = re.sub(r'(<a\b(?=[^>]*href="#")[^>]*?)href="#"(?=[^>]*>\s*<h5>' + re.escape(title) + r'</h5>)', rf'\1href="{link}"', html)
             html = re.sub(r'(<a\b(?=[^>]*href="#")[^>]*?)href="#"(?=[^>]*>\s*<img\b[^>]*?src="[^"]*' + re.escape(article["image"]) + r'")', rf'\1href="{link}"', html, flags=re.S)
         if path.name == "blog.html":
-            html = html.replace('href="blog/saas-development-cost-2026"', 'href="blog/saas-development-cost-2026.html"')
             html = html.replace('<h5>How Much Does It Cost to Build a SaaS Product in 2026?</h5>', '<h5>How Much Does It Cost to Build a SaaS Product in 2026?</h5>')
             html = re.sub(r'(<a class="hover:underline px-6 pt-6 pb-8" )href="#"(?=>\s*<h5>How Much Does It Cost to Build a SaaS Product in 2026\?</h5>)', r'\1href="blog/saas-development-cost-2026.html"', html)
             html = re.sub(r'<section class="bg-brand-light section-padding">(?=\s*<div class="page-container-narrow">\s*<div class="mb-8[^>]*>\s*<h2>AI)', '<section id="ai-automation" class="bg-brand-light section-padding">', html)
@@ -674,7 +685,7 @@ def wire_links():
             html = re.sub(r'(<a class="hover:underline px-6 pt-6 pb-8" )href="#"(?=>\s*<h5>How Much Does It Cost to Build a SaaS Product in 2026\?</h5>)', r'\1href="../saas-development-cost-2026.html"', html)
         html = re.sub(r'href="#"(?=\s*>AI &amp; Automation</a>)', 'href="/blog/category/ai-automation"', html)
         html = re.sub(r'href="#"(?=\s*>SaaS &amp; Startups</a>)', 'href="/blog/category/saas-startups"', html)
-        path.write_text(html, encoding="utf-8")
+        path.write_text(clean_internal_links(html), encoding="utf-8")
 
     path = BLOG / "saas-development-cost-2026.html"
     html = path.read_text(encoding="utf-8")
@@ -683,7 +694,7 @@ def wire_links():
     html = html.replace('href="../category.html"', 'href="../blog/category/software-development.html"')
     for article in ARTICLES:
         html = html.replace(f'href="../blog.html#{article["slug"]}"', f'href="{article["slug"]}.html"')
-    path.write_text(html, encoding="utf-8")
+    path.write_text(clean_internal_links(html), encoding="utf-8")
 
 
 def build_categories():
@@ -700,7 +711,7 @@ def build_categories():
             if article["category_slug"] != slug:
                 continue
             card = next(card for card in cards if f'<h5>{escape(article["title"], quote=False)}</h5>' in card)
-            card = card.replace('src="assets/', 'src="../../assets/').replace(f'href="blog/{article["slug"]}.html"', f'href="../{article["slug"]}.html"')
+            card = card.replace('src="assets/', 'src="../../assets/').replace(f'href="blog/{article["slug"]}"', f'href="../{article["slug"]}"')
             selected.append(card)
         page = software.replace('Software Development</span>', f'{label}</span>')
         page = page.replace('Category:</span> Software Development', f'Category:</span> {label}')
@@ -714,7 +725,7 @@ def build_categories():
 <div class="pointer-events-none absolute inset-x-0 top-0 h-56 bg-white" aria-hidden="true"></div>
 <div class="page-container-narrow relative"><div class="grid grid-cols-3 gap-6 max-lg:grid-cols-2 max-sm:grid-cols-1">{"".join(selected)}</div></div></section>'''
         page = re.sub(section_pattern, lambda _: section, page, count=1, flags=re.S)
-        (BLOG / f"category/{slug}.html").write_text(page, encoding="utf-8")
+        (BLOG / f"category/{slug}.html").write_text(clean_internal_links(page), encoding="utf-8")
 
 
 if __name__ == "__main__":
