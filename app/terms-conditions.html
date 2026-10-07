@@ -1184,28 +1184,25 @@
 				max-md:items-stretch max-md:gap-8"
 		>
 			<div
-					class="sticky top-28 w-70 shrink-0 max-lg:w-60 max-md:top-20
-					max-md:z-10 max-md:-mx-5 max-md:w-auto"
+					class="sticky top-28 w-70 shrink-0 max-lg:w-60 max-md:top-20 max-md:z-10 max-md:-mx-5 max-md:w-auto"
 					data-terms-menu
 			>
-				<nav class="flex flex-col max-md:hidden">
+				<nav class="flex flex-col max-md:hidden" aria-label="Terms and conditions sections">
 					<a
-							class="text-brand-gray hover:text-primary
-							aria-[current=location]:border-primary aria-[current=location]:text-primary
-							 border-l-2 border-transparent p-3"
+							class="text-brand-gray hover:text-primary aria-[current=location]:border-primary aria-[current=location]:text-primary border-l-2 border-transparent py-3 pr-2 pl-3"
 							data-terms-link
 							href="#copyright"
 							aria-current="location"
 					>Copyright and trademark notice</a
 					>
 					<a
-							class="text-brand-gray hover:text-primary aria-[current=location]:border-primary aria-[current=location]:text-primary border-l-2 border-transparent p-3"
+							class="text-brand-gray hover:text-primary aria-[current=location]:border-primary aria-[current=location]:text-primary border-l-2 border-transparent py-3 pr-2 pl-3"
 							data-terms-link
 							href="#liability"
 					>General legal notice and liability disclaimer</a
 					>
 					<a
-							class="text-brand-gray hover:text-primary aria-[current=location]:border-primary aria-[current=location]:text-primary border-l-2 border-transparent p-3"
+							class="text-brand-gray hover:text-primary aria-[current=location]:border-primary aria-[current=location]:text-primary border-l-2 border-transparent py-3 pr-2 pl-3"
 							data-terms-link
 							href="#severability"
 					>Severability</a
@@ -1213,51 +1210,48 @@
 				</nav>
 				<div class="select select-field hidden max-md:block" data-terms-select>
 					<button
-							class="select__button h-auto gap-4 rounded-none border-0
-							bg-black p-5 text-left font-semibold text-white   aria-expanded:ring-0"
+							class="select__button h-auto gap-4 rounded-none border-0 bg-black px-5 py-4 text-left font-semibold text-white focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-white aria-expanded:ring-0"
 							type="button"
 							aria-expanded="false"
+							aria-controls="terms-section-options"
 					>
 						<span data-select-button-value>Copyright and trademark notice</span>
 						<svg class="size-6 shrink-0 text-white" aria-hidden="true">
 							<use href="assets/images/icons.svg#chevron-bottom"></use>
 						</svg>
 					</button>
-					<div
-							class="select__dropdown translate-y-0
-							rounded-none border-0 px-0 py-2 data-[position=top]:translate-y-0"
+					<nav
+							class="select__dropdown translate-y-0 rounded-none border-0 px-0 py-2 data-[position=top]:translate-y-0"
+							id="terms-section-options"
 							data-open="false"
+							aria-label="Terms and conditions sections"
 					>
 						<a
-								class="select__dropdown-button text-brand-gray hover:text-primary aria-selected:border-primary aria-selected:text-primary rounded-none border-l-2 border-transparent p-3 text-base hover:bg-transparent aria-selected:bg-transparent aria-selected:font-normal"
-								type="button"
-								role="option"
-								aria-selected="true"
+								class="select__dropdown-button text-brand-gray hover:text-primary aria-[current=location]:border-primary aria-[current=location]:text-primary rounded-none border-l-2 border-transparent p-3 text-base hover:bg-transparent"
 								href="#copyright"
-								data-select="copyright"
+								aria-current="location"
+								data-select
+								data-terms-link
 						>
 							Copyright and trademark notice
 						</a>
-						<button
-								class="select__dropdown-button text-brand-gray hover:text-primary aria-selected:border-primary aria-selected:text-primary rounded-none border-l-2 border-transparent p-3 text-base hover:bg-transparent aria-selected:bg-transparent aria-selected:font-normal"
-								type="button"
-								role="option"
-								aria-selected="false"
-								data-select="liability"
+						<a
+								class="select__dropdown-button text-brand-gray hover:text-primary aria-[current=location]:border-primary aria-[current=location]:text-primary rounded-none border-l-2 border-transparent p-3 text-base hover:bg-transparent"
+								href="#liability"
+								data-select
+								data-terms-link
 						>
 							General legal notice and liability disclaimer
-						</button>
-						<button
-								class="select__dropdown-button text-brand-gray hover:text-primary aria-selected:border-primary aria-selected:text-primary rounded-none border-l-2 border-transparent p-3 text-base hover:bg-transparent aria-selected:bg-transparent aria-selected:font-normal"
-								type="button"
-								role="option"
-								aria-selected="false"
-								data-select="severability"
+						</a>
+						<a
+								class="select__dropdown-button text-brand-gray hover:text-primary aria-[current=location]:border-primary aria-[current=location]:text-primary rounded-none border-l-2 border-transparent p-3 text-base hover:bg-transparent"
+								href="#severability"
+								data-select
+								data-terms-link
 						>
 							Severability
-						</button>
-					</div>
-					<input type="hidden" value="copyright" />
+						</a>
+					</nav>
 				</div>
 			</div>
 			<div class="flex min-w-0 flex-1 flex-col gap-8 max-md:contents">
