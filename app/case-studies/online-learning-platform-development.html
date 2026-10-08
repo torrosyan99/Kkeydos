@@ -12,6 +12,8 @@
 	<link href="../assets/styles/main.css" rel="stylesheet" type="text/css" />
 
 	<script src="../assets/scripts/main.js" type="module" defer></script>
+	<link rel="stylesheet" href="../assets/styles/case-study.css" />
+	<script src="../assets/scripts/pages/case-study.js" type="module"></script>
 </head>
 <body>
 
@@ -869,7 +871,7 @@
 				</div>
 
 				<div class="header-item">
-					<button class="header-button">Our Work</button>
+					<a class="header-button" href="../clients">Our Work</a>
 				</div>
 				<div class="header-item">
 					<button class="header-button">Blog</button>
@@ -1138,7 +1140,7 @@
 
 			<a
 					class="border-b-brand-border flex h-16 items-center border-b px-5 font-medium"
-					href="#"
+					href="../clients"
 			>
 				Our Work
 			</a>
@@ -1151,7 +1153,7 @@
 		</div>
 	</div>
 </header>
-<main>
+<main data-case-flow>
 	<section class="relative pt-12 pb-30 text-white max-md:py-6 max-md:pb-12">
 		<img
 				class="absolute inset-0 -z-10 size-full object-cover object-top"
@@ -1332,19 +1334,7 @@
 	</section>
 		<section class="bg-brand-light pt-20 max-md:pt-10" >
 			<div class="page-container">
-				<div class="relative">
-					<svg
-							class="pointer-events-none absolute top-6 left-0 h-18 w-16 text-[#fbb39e] max-md:hidden"
-							viewBox="0 0 64 72"
-							fill="none"
-							aria-hidden="true"
-					>
-						<path d="M64 4H60A56 56 0 0 0 4 60V72" stroke="currentColor" stroke-width="8" />
-					</svg>
-					<div
-							class="pointer-events-none absolute top-18 bottom-0 left-0 w-2 bg-[#fbb39e] max-md:hidden"
-							aria-hidden="true"
-					></div>
+				<div class="relative" data-case-flow-start>
 					<div class="px-26 pb-40 max-lg:pr-8 max-lg:pl-20 max-md:px-0 max-md:pb-20">
 							<h2>The challenge<span class="text-brand-orange">.</span></h2>
 
@@ -1369,10 +1359,6 @@
 	<section class="bg-brand-orange text-white">
 		<div class="page-container">
 			<div class="relative p-25 max-md:px-5 max-md:py-10 ">
-				<div
-						class="pointer-events-none absolute inset-y-0 left-0 w-2 bg-[#fbb39e] max-md:hidden"
-						aria-hidden="true"
-				></div>
 				<div class="mx-auto max-w-xl text-center">
 					<h2>The solution.</h2>
 					<p class="text-3xl mt-6 font-medium">
@@ -1382,23 +1368,8 @@
 					</p>
 				</div>
 			</div>
-			<div
-					class="pointer-events-none relative h-34 text-[#fbb39e] max-md:hidden"
-					aria-hidden="true"
-			>
-				<svg class="absolute top-0 left-0 h-18 w-16" viewBox="0 0 64 72" fill="none">
-					<path d="M4 0V12A56 56 0 0 0 60 68H64" stroke="currentColor" stroke-width="8" />
-				</svg>
-				<div class="absolute inset-x-16 top-16 h-2 bg-current"></div>
-				<svg class="absolute right-0 bottom-0 h-18 w-16" viewBox="0 0 64 72" fill="none">
-					<path d="M0 4H4A56 56 0 0 1 60 60V72" stroke="currentColor" stroke-width="8" />
-				</svg>
-			</div>
+			<div data-case-flow-turn aria-hidden="true"></div>
 			<div class="relative p-25 max-md:px-5 max-md:py-10 ">
-				<div
-						class="pointer-events-none absolute inset-y-0 right-0 w-2 bg-[#fbb39e] max-md:hidden"
-						aria-hidden="true"
-				></div>
 				<div class=" text-center">
 					<h3>Platform capabilities.</h3>
 					<ul class="flex flex-wrap mt-5 justify-center gap-3">
@@ -1461,7 +1432,7 @@
 										</li>
 									</ul>
 
-							<div class="text-primary mt-20 rounded-3xl bg-white px-6 pt-4 pb-8 max-sm:px-5">
+							<div class="text-primary mt-20 rounded-3xl bg-white px-6 pt-4 pb-8 max-sm:px-5" data-case-flow-end>
 								<p class="mb-4 text-lg">Get this case study in PDF to your inbox.</p>
 								<form class="flex items-center gap-3">
 									<input
@@ -1479,18 +1450,6 @@
 								>Open your email request</a
 								>
 							</div>
-						</div>
-					</div>
-					<div
-							class="pointer-events-none absolute inset-y-0 right-5 w-16 pb-56 text-[#fbb39e] max-md:hidden"
-							aria-hidden="true"
-					>
-						<div class="relative h-full border-r-8 border-current">
-							<svg class="absolute top-full -right-2 h-18 w-16" viewBox="0 0 64 72" fill="none">
-								<path d="M60 0V12A56 56 0 0 1 4 68H0" stroke="currentColor" stroke-width="8" />
-							</svg>
-							<span class="absolute top-full right-14 mt-16 h-2 w-12 bg-current"></span>
-							<span class="absolute top-full right-24 mt-13 size-8 rounded-full bg-current"></span>
 						</div>
 					</div>
 				</div>

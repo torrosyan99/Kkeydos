@@ -4,23 +4,10 @@ const sections = document.querySelectorAll('[data-terms-section]');
 if (menu && sections.length) {
   const links = menu.querySelectorAll('[data-terms-link]');
   const current = menu.querySelector('[data-select-button-value]');
+  const trigger = menu.querySelector('.select__button');
+  const mobile = window.matchMedia('(width < 48rem)');
   let currentId = '';
-  let pendingId = '';
-  let pendingTimer;
   let scheduled = false;
-
-  function setCurrent(id) {
-    if (id === currentId) return;
-    currentId = id;
-    links.forEach((link) => {
-      if (link.hash === `#${id}`) {
-        link.setAttribute('aria-current', 'location');
-        if (current) current.textContent = link.textContent.trim();
-      } else {
-        link.removeAttribute('aria-current');
-      }
-    });
-  }
 
   function updateCurrent() {
     scheduled = false;
@@ -31,12 +18,17 @@ if (menu && sections.length) {
       if (section.getBoundingClientRect().top <= offset + 1) active = section;
     });
 
-    if (pendingId && active.id !== pendingId) return;
-    if (pendingId) {
-      pendingId = '';
-      clearTimeout(pendingTimer);
-    }
-    setCurrent(active.id);
+    if (active.id === currentId) return;
+    currentId = active.id;
+
+    links.forEach((link) => {
+      if (link.hash === `#${currentId}`) {
+        link.setAttribute('aria-current', 'location');
+        if (current) current.textContent = link.textContent.trim();
+      } else {
+        link.removeAttribute('aria-current');
+      }
+    });
   }
 
   function scheduleUpdate() {
@@ -45,23 +37,14 @@ if (menu && sections.length) {
     requestAnimationFrame(updateCurrent);
   }
 
-  links.forEach((link) => {
-    link.addEventListener('click', () => {
-      const id = link.hash.slice(1);
-      if (!id || !document.getElementById(id)) return;
-      pendingId = id;
-      setCurrent(id);
-      clearTimeout(pendingTimer);
-      pendingTimer = setTimeout(() => {
-        pendingId = '';
-        scheduleUpdate();
-      }, 1500);
-    });
-  });
-
   document.addEventListener('scroll', scheduleUpdate, { passive: true });
   window.addEventListener('resize', scheduleUpdate);
   window.addEventListener('load', scheduleUpdate);
   window.addEventListener('pageshow', scheduleUpdate);
+  mobile.addEventListener('change', () => {
+    // main.js owns the shared select state and keyboard navigation.
+    if (trigger?.ariaExpanded === 'true') trigger.click();
+    scheduleUpdate();
+  });
   updateCurrent();
 }
