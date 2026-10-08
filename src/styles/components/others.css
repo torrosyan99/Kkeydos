@@ -49,7 +49,8 @@
   }
 
   .black-section {
-    @apply relative isolate overflow-hidden bg-[linear-gradient(110deg,#111516,#101313_65%,#111919)] py-16 text-white [--glow-x:75%] [--glow-y:50%] before:pointer-events-none before:absolute before:inset-0 before:-z-1 before:bg-[radial-gradient(ellipse_36rem_26rem_at_var(--glow-x)_var(--glow-y),rgba(35,143,146,0.22),transparent_75%)] before:opacity-0 before:transition-opacity before:duration-350 before:content-[''] focus-within:before:opacity-100 hover:before:opacity-100 max-sm:py-12;
+    @apply relative isolate overflow-hidden
+    bg-[linear-gradient(110deg,#111516,#101313_65%,#111919)] py-10 text-white [--glow-x:75%] [--glow-y:50%] before:pointer-events-none before:absolute before:inset-0 before:-z-1 before:bg-[radial-gradient(ellipse_36rem_26rem_at_var(--glow-x)_var(--glow-y),rgba(35,143,146,0.22),transparent_75%)] before:opacity-0 before:transition-opacity before:duration-350 before:content-[''] focus-within:before:opacity-100 hover:before:opacity-100 max-sm:py-12;
   }
 
   .service-option {
