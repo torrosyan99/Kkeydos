@@ -6,7 +6,7 @@ if (menu && sections.length) {
   const toc = menu.querySelector('[data-terms-toc]');
   const current = menu.querySelector('[data-select-button-value]');
   const trigger = menu.querySelector('.select__button');
-  const mobile = window.matchMedia('(width < 48rem)');
+  const mobile = window.matchMedia('(width < 768px)');
   let currentId = '';
   let scheduled = false;
 
@@ -58,9 +58,7 @@ if (menu && sections.length) {
   document.addEventListener('scroll', scheduleUpdate, { passive: true });
   window.addEventListener('resize', scheduleUpdate);
   window.addEventListener('load', scheduleUpdate);
-  window.addEventListener('pageshow', scheduleUpdate);
   mobile.addEventListener('change', () => {
-    // main.js owns the shared select state and keyboard navigation.
     if (trigger?.ariaExpanded === 'true') trigger.click();
     scheduleUpdate();
   });
