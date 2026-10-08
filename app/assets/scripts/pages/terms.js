@@ -1,35 +1,67 @@
-const links = document.querySelectorAll('[data-terms-link]');
+const menu = document.querySelector('[data-terms-menu]');
 const sections = document.querySelectorAll('[data-terms-section]');
-const select = document.querySelector('[data-terms-select]');
-const current = select.querySelector('[data-select-button-value]');
-const trigger = select.querySelector('.select__button');
-const mobile = window.matchMedia('(width < 48rem)');
-let currentId = '';
 
-function updateCurrent() {
-  const offset = parseFloat(getComputedStyle(sections[0]).scrollMarginTop);
-  let active = sections[0];
+if (menu && sections.length) {
+  const links = menu.querySelectorAll('[data-terms-link]');
+  const current = menu.querySelector('[data-select-button-value]');
+  let currentId = '';
+  let pendingId = '';
+  let pendingTimer;
+  let scheduled = false;
 
-  sections.forEach((section) => {
-    if (section.getBoundingClientRect().top <= offset + 1) active = section;
-  });
+  function setCurrent(id) {
+    if (id === currentId) return;
+    currentId = id;
+    links.forEach((link) => {
+      if (link.hash === `#${id}`) {
+        link.setAttribute('aria-current', 'location');
+        if (current) current.textContent = link.textContent.trim();
+      } else {
+        link.removeAttribute('aria-current');
+      }
+    });
+  }
 
-  if (active.id === currentId) return;
-  currentId = active.id;
+  function updateCurrent() {
+    scheduled = false;
+    const offset = parseFloat(getComputedStyle(sections[0]).scrollMarginTop) || 0;
+    let active = sections[0];
+
+    sections.forEach((section) => {
+      if (section.getBoundingClientRect().top <= offset + 1) active = section;
+    });
+
+    if (pendingId && active.id !== pendingId) return;
+    if (pendingId) {
+      pendingId = '';
+      clearTimeout(pendingTimer);
+    }
+    setCurrent(active.id);
+  }
+
+  function scheduleUpdate() {
+    if (scheduled) return;
+    scheduled = true;
+    requestAnimationFrame(updateCurrent);
+  }
 
   links.forEach((link) => {
-    if (link.hash === `#${currentId}`) {
-      link.setAttribute('aria-current', 'location');
-      current.textContent = link.textContent.trim();
-    } else {
-      link.removeAttribute('aria-current');
-    }
+    link.addEventListener('click', () => {
+      const id = link.hash.slice(1);
+      if (!id || !document.getElementById(id)) return;
+      pendingId = id;
+      setCurrent(id);
+      clearTimeout(pendingTimer);
+      pendingTimer = setTimeout(() => {
+        pendingId = '';
+        scheduleUpdate();
+      }, 1500);
+    });
   });
-}
 
-document.addEventListener('scroll', updateCurrent, { passive: true });
-mobile.addEventListener('change', () => {
-  if (trigger.ariaExpanded === 'true') trigger.click();
+  document.addEventListener('scroll', scheduleUpdate, { passive: true });
+  window.addEventListener('resize', scheduleUpdate);
+  window.addEventListener('load', scheduleUpdate);
+  window.addEventListener('pageshow', scheduleUpdate);
   updateCurrent();
-});
-updateCurrent();
+}
