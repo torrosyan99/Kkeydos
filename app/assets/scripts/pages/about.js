@@ -66,11 +66,16 @@ if (page) {
     // Align the endpoint with the heading's first line, not the taller image row.
     // Layout offsets exclude the text's entrance transform.
     let titleTop = 0;
-    for (let element = givebackTitle; element && element !== givebackStop.offsetParent; element = element.offsetParent) {
+    for (
+      let element = givebackTitle;
+      element && element !== givebackStop.offsetParent;
+      element = element.offsetParent
+    ) {
       titleTop += element.offsetTop;
     }
     const titleStyle = getComputedStyle(givebackTitle);
-    const titleLineHeight = parseFloat(titleStyle.lineHeight) || parseFloat(titleStyle.fontSize) * 1.2;
+    const titleLineHeight =
+      parseFloat(titleStyle.lineHeight) || parseFloat(titleStyle.fontSize) * 1.2;
     givebackStop.style.top = `${titleTop + titleLineHeight / 2 - givebackStop.offsetHeight / 2}px`;
     // Start above the viewport; opacity reveals the card later in its descent.
     mapTravel = window.innerHeight * 0.9 + mapCard.offsetHeight + 48;
@@ -112,9 +117,7 @@ if (page) {
 
   const drawIntro = () => {
     // Keep the circle at its destination while the line retracts on upward scroll.
-    const ballProgress = firstRevealed
-      ? 1
-      : Math.max(introBallProgress, introProgress);
+    const ballProgress = firstRevealed ? 1 : Math.max(introBallProgress, introProgress);
     const lineProgress = introProgress;
     curve.style.strokeDashoffset = String(curveLength * (1 - lineProgress));
     curve.style.opacity = lineProgress > 0 ? '1' : '0';
@@ -163,16 +166,20 @@ if (page) {
     const track = storyTrack.getBoundingClientRect();
     const trackLength = track.height;
     const lineHead = viewport * 0.52;
-    const storyTarget = storyActive && introTarget === 1
-      ? Math.min(trackLength, Math.max(0, lineHead - track.top))
-      : 0;
-    const progress = storyProgress = approach(storyProgress, storyTarget, 0.1);
+    const storyTarget =
+      storyActive && introTarget === 1
+        ? Math.min(trackLength, Math.max(0, lineHead - track.top))
+        : 0;
+    const progress = (storyProgress = approach(storyProgress, storyTarget, 0.1));
     line.style.height = `${progress}px`;
     ball.style.transform = `translateY(${progress - 16}px)`;
     ball.hidden = progress === 0 || progress === trackLength;
     steps.slice(1).forEach((step) => {
       const marker = step.querySelector('[data-story-stop]').getBoundingClientRect();
-      step.toggleAttribute('data-reached', storyActive && marker.top + marker.height / 2 <= track.top + progress);
+      step.toggleAttribute(
+        'data-reached',
+        storyActive && marker.top + marker.height / 2 <= track.top + progress,
+      );
     });
 
     const givebackTop = givebackTrack.getBoundingClientRect().top;
@@ -180,8 +187,8 @@ if (page) {
     const givebackLength = stopRect.top + stopRect.height / 2 - givebackTop;
     // Start the white segment only after the orange head reaches this section.
     // Clear it immediately on exit so smoothing cannot leave a white flash behind.
-    const givebackActive = storyActive && introTarget === 1
-      && progress === trackLength && lineHead > givebackTop;
+    const givebackActive =
+      storyActive && introTarget === 1 && progress === trackLength && lineHead > givebackTop;
     const givebackTarget = givebackActive
       ? Math.min(givebackLength, Math.max(0, lineHead - givebackTop))
       : 0;
@@ -198,9 +205,10 @@ if (page) {
     const mapTarget = reducedMotion.matches
       ? 1
       : clamp((viewport * 0.82 - mapRect.top) / (viewport * (desktopMap.matches ? 0.45 : 0.35)));
-    mapProgress = mapProgress === null || reducedMotion.matches
-      ? mapTarget
-      : approach(mapProgress, mapTarget, 0.0001);
+    mapProgress =
+      mapProgress === null || reducedMotion.matches
+        ? mapTarget
+        : approach(mapProgress, mapTarget, 0.0001);
     const mapRemaining = (1 - mapProgress) ** 2;
     if (desktopMap.matches) {
       mapCard.style.transform = `translate3d(0, ${-mapTravel * mapRemaining}px, 0)`;

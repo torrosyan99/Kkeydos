@@ -1,34 +1,27 @@
 .scroll {
-    @apply max-h-[calc(100dvh-8rem)]
-    overflow-y-auto
-    overscroll-y-contain
-    [scrollbar-gutter:stable]
-    [scrollbar-width:thin]
-    [scrollbar-color:#a8afb8_transparent]
-    scroll-py-4
-    pr-2;
+  @apply max-h-[calc(100dvh-8rem)] scroll-py-4 [scrollbar-width:thin] [scrollbar-color:#a8afb8_transparent] [scrollbar-gutter:stable] overflow-y-auto overscroll-y-contain pr-2;
 
-    &::-webkit-scrollbar {
-        @apply w-[5px];
+  &::-webkit-scrollbar {
+    @apply w-[5px];
+  }
+
+  &::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-[#a8afb8];
+  }
+
+  &::-webkit-scrollbar-button {
+    @apply hidden;
+  }
+
+  a {
+    @apply transition-colors duration-180 ease-in-out;
+
+    &[aria-current='location'] {
+      @apply text-primary font-semibold;
     }
-
-    &::-webkit-scrollbar-track {
-        @apply bg-transparent;
-    }
-
-    &::-webkit-scrollbar-thumb {
-        @apply rounded-full bg-[#a8afb8];
-    }
-
-    &::-webkit-scrollbar-button {
-        @apply hidden;
-    }
-
-    a {
-        @apply transition-colors duration-180 ease-in-out;
-
-        &[aria-current='location'] {
-            @apply text-primary font-semibold;
-        }
-    }
+  }
 }

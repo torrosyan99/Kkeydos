@@ -1,6 +1,6 @@
 import '../libs/text-rotator/text-rotator.js';
-import {marquee} from '../libs/vanilla-marquee/vanilla-marquee.js';
-import {initToggleGroup} from '../libs/initToggleGroup/initToggleGroup.js';
+import { marquee } from '../libs/vanilla-marquee/vanilla-marquee.js';
+import { initToggleGroup } from '../libs/initToggleGroup/initToggleGroup.js';
 
 const header = document.querySelector('#header');
 const menuButton = document.querySelector('#menu-button');
@@ -49,13 +49,13 @@ document.querySelectorAll('[data-marquee]').forEach((element) => {
       element.dataset.marqueePauseOnHover === undefined
         ? true
         : element.dataset.marqueePauseOnHover === 'true' ||
-        element.dataset.marqueePauseOnHover === '',
+          element.dataset.marqueePauseOnHover === '',
 
     startVisible:
       element.dataset.marqueeStartVisible === undefined
         ? true
         : element.dataset.marqueeStartVisible === 'true' ||
-        element.dataset.marqueeStartVisible === '',
+          element.dataset.marqueeStartVisible === '',
   });
 });
 
@@ -251,19 +251,16 @@ document.querySelectorAll('[data-cta-glow]').forEach((cta) => {
   });
 });
 
-
 // Top progress
 
 document.querySelectorAll('[data-progress]').forEach((progress) => {
   const content = document.querySelector(progress.dataset.contentSelector);
 
   if (content) {
-
-
     function updateProgress() {
       const rect = content.getBoundingClientRect();
-      console.log(rect)
-      console.log(window.scrollY)
+      console.log(rect);
+      console.log(window.scrollY);
       const contentTop = rect.top + window.scrollY;
       const contentHeight = content.offsetHeight;
 
@@ -279,7 +276,5 @@ document.querySelectorAll('[data-progress]').forEach((progress) => {
     window.addEventListener('resize', updateProgress);
 
     updateProgress();
-
-
   }
 });

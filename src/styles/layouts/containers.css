@@ -7,7 +7,6 @@
     @apply mx-auto w-full max-w-7xl px-5;
   }
 
-
   .page-container-compact {
     @apply mx-auto w-full max-w-480 px-5;
   }

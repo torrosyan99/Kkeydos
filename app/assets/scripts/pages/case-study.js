@@ -1,11 +1,17 @@
-const main = document.querySelector('main')
-const svg = document.createElementNS('http://www.w3.org/2000/svg',
-  'svg');
+const main = document.querySelector('main');
+const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
 const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
 const dot = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
 svg.classList.add(
-  'absolute', 'left-0', 'z-1', 'block', 'overflow-visible',
-  'text-[#fbb39e]', 'pointer-events-none', '[&[hidden]]:hidden', 'max-md:hidden',
+  'absolute',
+  'left-0',
+  'z-1',
+  'block',
+  'overflow-visible',
+  'text-[#fbb39e]',
+  'pointer-events-none',
+  '[&[hidden]]:hidden',
+  'max-md:hidden',
 );
 svg.setAttribute('aria-hidden', 'true');
 svg.setAttribute('focusable', 'false');
@@ -56,12 +62,30 @@ function draw() {
   if (hasTurn) {
     const turnRadius = Math.min(radius, (endY - turnY) / 2);
     route = [
-      'M', left + 60, 0, 'H', left + radius,
-      'Q', left, 0, left, radius,
-      'V', turnY - turnRadius,
-      'Q', left, turnY, left + turnRadius, turnY,
-      'H', right - turnRadius,
-      'Q', right, turnY, right, turnY + turnRadius,
+      'M',
+      left + 60,
+      0,
+      'H',
+      left + radius,
+      'Q',
+      left,
+      0,
+      left,
+      radius,
+      'V',
+      turnY - turnRadius,
+      'Q',
+      left,
+      turnY,
+      left + turnRadius,
+      turnY,
+      'H',
+      right - turnRadius,
+      'Q',
+      right,
+      turnY,
+      right,
+      turnY + turnRadius,
     ];
   } else {
     // Without a crossover, keep the entire route in the right-hand gutter.
@@ -89,9 +113,11 @@ const resizeObserver = new ResizeObserver(schedule);
 function observeLayout() {
   resizeObserver.disconnect();
   const elements = new Set([
-    main, ...main.children, ...main.querySelectorAll(
+    main,
+    ...main.children,
+    ...main.querySelectorAll(
       '[data-case-flow-start], [data-case-flow-turn], [data-case-flow-end], [data-case-flow-end] form',
-    )
+    ),
   ]);
   elements.forEach((element) => {
     if (element !== svg) resizeObserver.observe(element);
